@@ -1,0 +1,89 @@
+@use './../utils/variables' as *;
+.default-form {
+  .form-group {
+    margin: 0;
+    label {
+      font-weight: 600;
+      color: rgba(var(--dark-color), 1);
+      padding-top: 0;
+    }
+    input {
+      border-radius: 6px;
+      padding: 9px 34px;
+      background-color: transparent;
+      border: 1px solid rgba($black, 0.1);
+    }
+    textarea {
+      border-radius: 6px;
+      background-color: transparent;
+      border: 1px solid rgba($black, 0.1);
+    }
+    h5 {
+      margin-bottom: 8px;
+      text-align: left;
+      color: rgba($black, 0.8);
+      font-weight: 600;
+    }
+    & + .form-group {
+      margin-top: 15px;
+    }
+    a {
+      text-align: center;
+    }
+    p {
+      padding-top: 10px;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 12px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1;
+    background-color: transparent;
+    height: 50px;
+    border-radius: 6px;
+    color: $muted-font;
+    border: none;
+    background: rgba($gray, 0.1);
+    margin-bottom: 30px;
+  }
+}
+.default-new-form {
+  label {
+    font-weight: 600;
+    color: rgba(var(--dark-color), 1);
+    padding-top: 0;
+    margin-bottom: 4px;
+  }
+  input {
+    border-radius: 6px;
+    padding: 9px;
+    background-color: transparent;
+    border: 1px solid rgba($black, 0.1);
+  }
+  textarea {
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid rgba($black, 0.1);
+  }
+}
+.form-radius {
+  input {
+    border-radius: 6px;
+  }
+}
+.form-sm {
+  input {
+    height: 32px;
+    font-size: 13px;
+  }
+}
+input {
+  &::placeholder {
+    color: $muted-font !important;
+    font-weight: 400;
+  }
+}

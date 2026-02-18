@@ -1,0 +1,36 @@
+.collapse-block {
+  &.open {
+    .block-title {
+      padding-bottom: 15px;
+      transition: all 0.3s ease;
+      font-weight: 700;
+      color: rgba(var(--dark-color), 1);
+    }
+  }
+  .block-title {
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgba(var(--dark-color), 1);
+    &:after {
+      position: absolute;
+      display: inline-block;
+      content: '\f107';
+      font-family: FontAwesome;
+      color: rgba(var(--dark-color), 1);
+      right: 0;
+      top: -4px;
+      font-size: 20px;
+    }
+  }
+  .block-content {
+    .group-main,
+    .str-msg {
+      .profile {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}

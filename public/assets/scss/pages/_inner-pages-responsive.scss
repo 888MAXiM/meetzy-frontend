@@ -1,0 +1,74 @@
+@use './../utils/variables' as *;
+@media (max-width: 1367px) {
+  // header //
+  .header-inner {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  //counter css //
+  .counter-box-second {
+    .counter-box {
+      .counter-icon {
+        font-size: 30px;
+      }
+      h6 {
+        font-size: 22px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .error-images {
+    display: none;
+  }
+  .team .owl-nav {
+    top: -60px;
+    button.owl-prev,
+    button.owl-next {
+      height: 30px;
+      width: 30px;
+      &:before {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  // breadcrumb //
+  .breadcrumb-main {
+    .breadcrumb-content {
+      display: unset;
+      text-align: center;
+      .breadcrumb-left {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  // error section //
+  .error-main {
+    .error-contain {
+      .error-btn {
+        padding: 15px 25px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  // about //
+  .team {
+    .team-content {
+      display: unset;
+      .text-content {
+        margin-top: 15px;
+        padding-left: 0;
+      }
+    }
+  }
+}

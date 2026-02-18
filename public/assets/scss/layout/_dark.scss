@@ -1,0 +1,2899 @@
+@use './../utils/variables' as *;
+.dark {
+  background-color: rgba(var(--dark), 1);
+  $dark-border: rgba(var(--light), 1);
+  .for-light {
+    display: none;
+    margin: 0;
+  }
+
+  .for-dark {
+    display: block;
+    margin: 0;
+  }
+
+  .login-page {
+    .left-page {
+      &::before {
+        background-color: rgba(var(--dark), 0.4);
+      }
+    }
+  }
+  .epr-main {
+    background-color: rgba(var(--light), 1) !important;
+
+    border-color: rgba($white, 0.1) !important;
+    .epr-search-container {
+      input {
+        background-color: rgba(var(--dark), 1) !important;
+      }
+    }
+    .epr-body {
+      .epr-emoji-list {
+        .epr-emoji-category {
+          h2 {
+            color: $white;
+            background-color: rgba(var(--light), 1) !important;
+            border-color: rgba(var(--dark), 1) !important;
+          }
+        }
+      }
+    }
+  }
+  .rmdp-ep-arrow {
+    border-color: rgba(var(--dark), 1) !important;
+  }
+  .rmdp-header-values {
+    color: $white;
+  }
+  .rmdp-day {
+    span {
+      color: $white;
+    }
+  }
+  .counter-box-second {
+    &::before {
+      background-color: rgba(2, 13, 11, 0.8) !important;
+    }
+
+    .counter-box {
+      .counter-no {
+        color: rgba($white, 1) !important;
+      }
+    }
+  }
+
+  .landing-header {
+    .dropdown-menu {
+      .nav-link {
+        span {
+          color: rgba($white, 1);
+        }
+      }
+    }
+  }
+
+  .login-page {
+    .left-page {
+      background-color: rgba(var(--dark), 1);
+    }
+  }
+
+  .login-page {
+    .left-page {
+      .form1 label {
+        color: rgba($white, 0.7);
+      }
+    }
+  }
+
+  .login-page {
+    .left-page {
+      .form1 {
+        .form-select {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
+  .downlaod {
+    .footer-title {
+      h2 {
+        color: rgba($white, 0.8);
+      }
+    }
+  }
+
+  .default-form {
+    .form-group {
+      label {
+        color: rgba($white, 0.7);
+      }
+    }
+  }
+
+  .Toastify__toast-template--light {
+    background: rgba(var(--light), 1) !important;
+  }
+
+  .Toastify__close-button {
+    filter: invert(1);
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: $white !important;
+      }
+
+      h5,
+      h6,
+      p,
+      span {
+        color: $white !important;
+      }
+
+      select {
+        color: $white;
+      }
+
+      .favorite-tab {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+      }
+
+      .document-tab {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+      }
+
+      .contact-list-tab {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+      }
+
+      .notification-tab {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+      }
+
+      .settings-tab {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+      }
+
+      .template-tab {
+        .nav-tabs {
+          .nav-item {
+            .nav-link {
+              background-color: rgba(var(--light), 1);
+              color: rgba($white, 0.8) !important;
+
+              svg {
+                fill: rgba($white, 0.8) !important;
+              }
+
+              &.active {
+                background-color: rgba(var(--primary-color), 1) !important;
+              }
+            }
+          }
+        }
+      }
+
+      .status-tab {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+
+        .my-status-box {
+          border-bottom: 1px solid $dark-border;
+        }
+
+        .contact-status-box {
+          h3 {
+            background-color: rgba(var(--light), 1);
+          }
+
+          .status-content {
+            border-bottom: 1px solid $dark-border;
+
+            ul {
+              li {
+                .img-status {
+                  border: 2px solid rgba(var(--dark), 1);
+                }
+              }
+            }
+
+            h5 {
+              color: $white;
+            }
+          }
+
+          .accordion {
+            .accordion-button {
+              color: rgba($white, 1);
+
+              &::after {
+                filter: contrast(0.1);
+              }
+            }
+
+            .accordion-item {
+              .accordion-collapse {
+                > .status-content {
+                  .user-status {
+                    &::before {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .recent-default {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+
+        .recent {
+          color: $white;
+          background-color: rgba(var(--dark), 1);
+
+          .recent-slider {
+            .recent-box {
+              .recent-profile {
+                .h6 {
+                  color: rgba($white, 0.8) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .icon-btn {
+        &.btn-outline-light {
+          color: $white !important;
+          background-color: rgba(var(--light), 1) !important;
+        }
+      }
+
+      .favorite-tab {
+        .chat-main {
+          li {
+            .bookmark-box {
+              background: transparent;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+
+    .main-nav {
+      border-right: 1px solid rgba($white, 0.1);
+      display: unset !important;
+      background-color: #021617;
+
+      .logo-wrapper {
+        border-bottom: 1px solid rgba($white, 0.1);
+      }
+    }
+
+    .meetzy-main {
+      .messages {
+        .calls {
+          .chat-friend-toggle {
+            .icon-btn {
+              background-color: rgba(var(--light), 1);
+            }
+          }
+        }
+      }
+    }
+
+    .msg-box {
+      > li {
+        &.gallery-img {
+          background-color: rgba(var(--dark), 1) !important;
+
+          h4 {
+            color: rgba($white, 0.8);
+          }
+
+          .badge {
+            background-color: rgba(var(--dark), 1);
+          }
+        }
+      }
+    }
+
+    .meetzy-main {
+      background-color: rgba(var(--light), 1);
+
+      .chat-content {
+        background-color: rgba(var(--light-dark), 1);
+      }
+
+      h5,
+      h6 {
+        color: $white;
+      }
+
+      .messages {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+
+        .contact-details {
+          color: $white;
+          background-color: rgba(var(--dark), 1);
+          box-shadow: 0 0 10px 3px #191d1f;
+
+          .left {
+            &.d-flex {
+              .flex-grow-1 {
+                h3 {
+                  color: $white;
+                }
+
+                &::before {
+                  background-color: rgba($white, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .message-input {
+        background-color: rgba(var(--dark), 1);
+        box-shadow: inset 0 0 10px 3px #191d1f;
+        &:after {
+          background-color: rgba(var(--light-dark), 1);
+        }
+
+        input {
+          background-color: transparent;
+        }
+      }
+
+      .switchery {
+        background-color: rgba(var(--light), 1) !important;
+      }
+
+      .call-content {
+        color: $white;
+        background-color: rgba(var(--light-dark), 1);
+
+        .user-profile {
+          background-color: rgba(var(--dark), 1);
+          box-shadow: 0 0 5px $dark-border;
+
+          .user-content {
+            h3,
+            h4 {
+              color: $white;
+            }
+          }
+        }
+
+        .call-log-main {
+          .coll-log-group {
+            color: $white;
+            background-color: rgba(var(--dark), 1);
+
+            .log-content-right {
+              h6 {
+                color: $white;
+              }
+            }
+          }
+        }
+
+        .call-log-clear {
+          color: $white;
+          background-color: rgba(var(--dark), 1);
+        }
+      }
+
+      .contact-content {
+        color: $white;
+        background-color: rgba(var(--light-dark), 1);
+
+        .contact-sub-content {
+          .personal-info-group {
+            color: $white;
+            background-color: rgba(var(--dark), 1);
+
+            h3 {
+              border-bottom: 2px solid $dark-border;
+              color: $white;
+            }
+
+            ul {
+              &.basic-info {
+                li {
+                  border-bottom: 1px dashed $dark-border;
+
+                  h5 {
+                    color: rgba($white, 1);
+                  }
+                }
+              }
+            }
+          }
+
+          .user-profile {
+            background-color: rgba(var(--dark), 1);
+            box-shadow: 0 0 5px $dark-border;
+
+            .user-content {
+              h3,
+              h4 {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-sidebar {
+    &.active {
+      .apps-ul {
+        .template-title {
+          h3 {
+            color: rgba($white, 0.9);
+          }
+        }
+      }
+    }
+  }
+
+  .otp {
+    .left-page {
+      .otp-content {
+        background-color: rgba(var(--light), 1);
+
+        h5,
+        h3 {
+          color: $white;
+        }
+
+        .form1 {
+          h4 {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .otp-bg-img {
+      background-color: rgba(var(--light-dark), 1);
+    }
+  }
+
+  .custom-scroll {
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(var(--light), 1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(var(--dark), 1);
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .recent-default {
+        .recent {
+          .recent-slider {
+            .recent-box {
+              .recent-profile {
+                h6 {
+                  color: $white !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .accordion-item {
+    background-color: transparent;
+  }
+
+  .template-according {
+    .card {
+      a {
+        color: rgba($white, 1);
+      }
+    }
+  }
+
+  .dynamic-sidebar {
+    .chat-main {
+      .notification-close {
+        background-color: transparent;
+
+        .notification {
+          .date-status {
+            .btn-close {
+              filter: invert(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    &.chat-cont-setting {
+      background-color: rgba(var(--light), 1);
+      box-shadow: 0 0 10px 5px rgba(var(--gray1), 0.1);
+    }
+  }
+
+  .collapse-block {
+    .block-title {
+      &::after {
+        color: rgba($white, 1);
+      }
+    }
+  }
+
+  .default-form {
+    .form-group {
+      h5 {
+        color: rgba($white, 1);
+      }
+    }
+  }
+
+  .app-sidebar {
+    .apps-ul > li {
+      .todo-main {
+        .todo-main-content {
+          h6 {
+            color: rgba($white, 1);
+          }
+        }
+
+        .todo-tab {
+          .tab-content {
+            .conversation-docs {
+              h5 {
+                color: rgba($white, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .call-log-main {
+    .call-box {
+      .details {
+        h4 {
+          color: rgba($white, 1);
+        }
+      }
+    }
+  }
+
+  .app-sidebar {
+    .apps-ul {
+      > li {
+        .file-tab {
+          .tab-content {
+            .link-group {
+              box-shadow: 0px 0px 21px -16px $border-color;
+
+              .d-flex svg {
+                background-color: rgba(var(--light), 1);
+                border-color: rgba(var(--light), 1);
+              }
+
+              .flex-grow-1 {
+                h6 {
+                  color: rgba($white, 0.8) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-sidebar {
+    .apps-ul {
+      > li {
+        .file-tab {
+          .block-content {
+            border-bottom: 1px solid rgba(var(--light-dark), 0.7);
+          }
+
+          .block-title {
+            color: rgba($white, 0.8);
+          }
+        }
+      }
+
+      .gallery-document {
+        .chat-box {
+          .details {
+            h6 {
+              color: rgba($white, 0.7);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .icon-btn {
+    &.btn-outline-light {
+      background-color: rgba(var(--light), 1) !important;
+      color: rgba($white, 1) !important;
+    }
+  }
+
+  .notes-modal-main {
+    .modal-content {
+      .card {
+        .card-header {
+          background-color: rgba(var(--dark), 1);
+          border-bottom-color: rgba($white, 0.2);
+
+          h5 {
+            color: $white;
+          }
+        }
+
+        .card-body {
+          border-bottom-color: rgba($white, 0.2);
+
+          h1 {
+            color: $white;
+          }
+
+          p {
+            color: rgba($white, 0.8);
+          }
+        }
+
+        .card-footer {
+          background-color: rgba(var(--dark), 1);
+        }
+      }
+    }
+  }
+
+  .msg-setting-main {
+    .badge.badge-img {
+      background-color: rgba(var(--dark), 1) !important;
+    }
+
+    .msg-dropdown-main {
+      .msg-dropdown {
+        background-color: rgba(var(--light), 1);
+        border-color: rgba(var(--light), 1);
+
+        ul {
+          li {
+            a {
+              color: rgba($white, 1);
+
+              i {
+                color: rgba($white, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    background-color: rgba(var(--dark), 1);
+    color: rgba($white, 1);
+
+    li {
+      color: rgba($white, 1);
+    }
+  }
+
+  .reminder-modal-main .lable {
+    color: rgba($white, 1);
+  }
+
+  .todo-main-modal {
+    .modal-body {
+      .default-form {
+        .todo-task {
+          h5 {
+            color: rgba($white, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .create-todo-main-modal {
+    .modal-body {
+      .default-form {
+        .todo-task h5 {
+          color: rgba($white, 1);
+        }
+      }
+    }
+  }
+
+  span {
+    color: rgba($white, 1) !important;
+  }
+
+  .app-sidebar {
+    .apps-ul {
+      > li {
+        .todo-main {
+          .todo-main-content {
+            border-bottom-color: rgba($white, 0.2);
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      .dropdown-divider {
+        background-color: rgba(var(--light), 1);
+        color: rgba($white, 1);
+      }
+    }
+  }
+
+  .add-popup .modal-footer {
+    border-top: 1px solid rgba($white, 0.2);
+  }
+
+  .meetzy-right-sidebar {
+    .right-sidebar {
+      background-color: rgba(var(--dark), 1);
+
+      .contact-profile {
+        .template-title {
+          h2 {
+            color: rgba($white, 1);
+          }
+
+          h4 {
+            color: rgba($white, 1);
+          }
+
+          .d-flex {
+            .flex-grow-1 {
+              .close-profile {
+                background-color: rgba(var(--light), 1);
+                color: rgba(var(--light), 1);
+              }
+            }
+          }
+        }
+
+        .details {
+          .name {
+            h3,
+            h6 {
+              color: rgba($white, 1);
+            }
+          }
+        }
+      }
+
+      .document {
+        border-color: $dark-border;
+
+        .filter-block {
+          .block-title {
+            color: rgba($white, 1);
+
+            &:after {
+              color: rgba($white, 1);
+            }
+          }
+
+          .block-content {
+            .document-list {
+              li {
+                h5 {
+                  color: rgba($white, 0.8);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .media-gallery {
+        border-color: $dark-border;
+
+        .collapse-block {
+          h5 {
+            color: rgba($white, 1);
+
+            &::after {
+              color: rgba($white, 1);
+            }
+          }
+
+          .block-content {
+            .share-media {
+              h6 {
+                color: rgba($white, 0.8);
+              }
+            }
+          }
+        }
+      }
+
+      .status {
+        border-color: $dark-border;
+
+        h5 {
+          color: rgba($white, 1);
+
+          &::after {
+            color: rgba($white, 1);
+          }
+
+          label {
+            color: rgba($white, 1);
+          }
+        }
+
+        .contact-chat {
+          .str-msg {
+            h5 {
+              color: rgba($white, 0.8);
+            }
+          }
+        }
+      }
+
+      .status.other {
+        border-color: $dark-border;
+
+        ul {
+          li {
+            h5 {
+              a {
+                color: rgba($white, 1);
+
+                svg {
+                  stroke: rgba($white, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .chat-main {
+    li {
+      &.active {
+        color: $white;
+        background-color: rgba(var(--light), 0.5);
+      }
+    }
+  }
+
+  .switch-list {
+    li {
+      span {
+        background-color: rgba(var(--light), 1) !important;
+      }
+    }
+  }
+  .input-group-text {
+    color: rgba(var(--white), 1) !important;
+    background-color: rgba(var(--light), 1);
+    border-color: rgba($white, 0.2);
+  }
+
+  .form-control {
+    background-color: rgba(var(--light), 1);
+    color: rgba($white, 0.8);
+    border-color: rgba($white, 0.2);
+
+    &::placeholder {
+      color: rgba($white, 0.5);
+    }
+  }
+
+  .setting-block {
+    border-top: 1px solid $dark-border;
+
+    .block {
+      background-color: rgba(var(--dark), 1);
+      border-top: 1px solid $dark-border;
+
+      .help {
+        > li {
+          border-top: 1px dashed $dark-border;
+
+          a {
+            color: rgba($white, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .integratin {
+    li {
+      border-bottom: 1px solid $dark-border;
+    }
+  }
+
+  .search2 {
+    border-top: 1px solid $dark-border;
+
+    > div {
+      color: $white;
+      background-color: rgba(var(--light), 1);
+    }
+  }
+
+  .group-main {
+    li {
+      &.active {
+        color: $white;
+        background-color: rgba(var(--light), 1);
+      }
+    }
+
+    ul {
+      &.grop-icon {
+        li {
+          border: 2px solid $dark-border;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .groupuser {
+    .gr-chat-friend-toggle {
+      .gr-chat-friend-content {
+        color: $white;
+        background-color: rgba(var(--dark), 1);
+
+        &::before {
+          border-top: 12px solid rgba(var(--dark), 1);
+        }
+      }
+
+      .add-grbtn {
+        &.icon-btn {
+          border: 2px dashed $dark-border !important;
+        }
+      }
+    }
+  }
+
+  .msg-box {
+    > li {
+      h5 {
+        background-color: #494949;
+      }
+
+      .auto-gallery {
+        background-color: rgba(var(--dark), 1);
+      }
+    }
+  }
+  audio::-webkit-media-controls-play-button {
+    color: rgba(var(--white), 1) !important;
+  }
+  audio::-webkit-media-controls-enclosure {
+    background-color: rgba(var(--light), 1) !important;
+  }
+  audio::-webkit-media-controls-current-time-display {
+    text-shadow: none !important;
+    color: rgba($white, 1);
+  }
+  audio::-webkit-media-controls-time-remaining-display {
+    color: rgba($white, 1);
+    text-shadow: none !important;
+  }
+  .btn-light {
+    color: $white !important;
+    background-color: rgba(var(--light), 1) !important;
+  }
+
+  .chat-main {
+    li {
+      .chat-box {
+        .details {
+          h4 {
+            color: rgba($white, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .template-tab {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          background-color: rgba(var(--light), 1);
+          color: $white !important;
+        }
+      }
+    }
+  }
+
+  .meetzy-right-sidebar {
+    .contact-icon {
+      .other-media-icon {
+        li {
+          a {
+            background-color: rgba(var(--light), 1);
+            border: none;
+          }
+
+          h6 {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .groupuser {
+    h4 {
+      color: $white;
+    }
+
+    .gr-chat-friend-toggle {
+      .add-grbtn {
+        &.icon-btn svg {
+          color: rgba($white, 0.8);
+        }
+      }
+    }
+  }
+
+  .group-main {
+    .group-box {
+      .details {
+        h3 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .right-chat-content {
+    h5 {
+      color: $white;
+      border-top-color: rgba(var(--light), 1);
+    }
+  }
+
+  .contact-chat {
+    > ul {
+      > li {
+        &.replies {
+          .msg-box {
+            li {
+              > h5 {
+                color: $white;
+              }
+
+              .document {
+                color: $white;
+              }
+
+              .auto-gallery {
+                color: $white;
+                background-color: rgba(var(--dark), 1);
+              }
+            }
+          }
+        }
+
+        &.sent {
+          .document {
+            .icon-btns {
+              a {
+                color: $white !important;
+                background-color: rgba(var(--light), 1) !important;
+              }
+            }
+          }
+        }
+      }
+
+      &.str-msg {
+        li {
+          .msg-box {
+            > li {
+              > h5 {
+                background-color: rgba(var(--light), 1);
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .msg-setting-main {
+    .msg-dropdown-main {
+      .msg-setting {
+        background-color: rgba(var(--dark), 1) !important;
+        color: $white !important;
+      }
+    }
+  }
+
+  .emojis-main {
+    .sticker-contain {
+      background-color: rgba(var(--light), 1);
+    }
+
+    .emojis-contain {
+      background-color: rgba(var(--light), 1);
+
+      .emojis-sub-contain {
+        &::before {
+          border-top: 12px solid rgba(var(--dark), 1);
+        }
+      }
+    }
+
+    .contact-poll {
+      .contact-poll-content {
+        background-color: rgba(var(--light), 1);
+
+        ul {
+          li {
+            a {
+              color: $white;
+            }
+          }
+        }
+
+        &::before {
+          border-top: 12px solid rgba(var(--light), 1);
+        }
+      }
+    }
+  }
+
+  .snippet-modal-main,
+  .pol-modal-main,
+  .add-contact-modal,
+  .fev-addcall-main {
+    h3,
+    h5 {
+      color: $white;
+    }
+
+    .modal-content {
+      background-color: rgba(var(--dark), 1);
+
+      .modal-header {
+        background-color: rgba(var(--light), 1);
+        border-bottom: 1px solid $dark-border;
+      }
+
+      .modal-body {
+        .form-group {
+          textarea {
+            background-color: rgba(var(--light), 1);
+            color: $white;
+
+            &::placeholder {
+              color: $white;
+            }
+          }
+
+          select {
+            background-color: rgba(var(--light), 1);
+            color: $white;
+          }
+
+          input {
+            background-color: rgba(var(--light), 1);
+
+            &::placeholder {
+              color: $white;
+            }
+          }
+
+          .post-poll {
+            background-color: rgba(var(--light), 1);
+          }
+        }
+      }
+    }
+
+    .modal-dialog {
+      &::before {
+        border-bottom: 10px solid rgba(var(--dark), 1);
+      }
+    }
+  }
+
+  .accordion-button {
+    background-color: transparent !important;
+  }
+
+  .chat-friend-toggle {
+    .chat-friend-content {
+      background-color: rgba(var(--light), 1);
+      box-shadow: 0 0 10px #060606b8;
+      ul {
+        li {
+          &:first-child {
+            a {
+              svg {
+                stroke: rgba($white, 0.9) !important;
+              }
+            }
+          }
+
+          &:last-child {
+            a {
+              svg {
+                fill: rgba($white, 0.9) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .search-form {
+    .form-group {
+      input {
+        border: 1px solid $dark-border;
+        background-color: rgba(var(--light), 1);
+        color: rgba($white, 0.8);
+      }
+    }
+
+    &::before {
+      color: $white;
+    }
+  }
+
+  .template-according {
+    .card {
+      .card-header {
+        background-color: rgba(var(--light), 1);
+      }
+
+      .card-body {
+        background-color: rgba(var(--light), 1) !important;
+      }
+    }
+  }
+
+  .card {
+    background-color: rgba(var(--dark), 1);
+  }
+
+  .change-number {
+    .form-control {
+      border-color: $dark-border;
+    }
+  }
+
+  .rightchat {
+    &.animat-rate {
+      .bg_circle {
+        > div {
+          border: 3px solid #42434a;
+        }
+      }
+
+      .cross1 {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .cross2 {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .cross {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .dot1 {
+        background-color: #42434a;
+      }
+    }
+  }
+
+  .left-page {
+    background-color: rgba(var(--dark), 0.8);
+  }
+
+  .login-page {
+    .login-content {
+      background-color: rgba(var(--light), 1) !important;
+    }
+  }
+
+  // sign up page
+  .login-page2 {
+    .login-content-main {
+      .login-content {
+        background-color: rgba(var(--light), 1);
+        color: $white;
+
+        h3 {
+          color: $white;
+        }
+
+        h4 {
+          color: $white;
+        }
+
+        .form1 {
+          .form-group {
+            .col-form-label {
+              color: $white;
+            }
+
+            .form-control {
+              background-color: rgba(var(--light), 1);
+            }
+          }
+        }
+
+        .form2 {
+          .form-group {
+            .col-form-label {
+              color: $white;
+            }
+
+            .form-control {
+              background-color: rgba(var(--light-dark), 1);
+              border: 1px solid $dark-border;
+
+              &::placeholder {
+                color: $white;
+              }
+            }
+          }
+        }
+
+        .login-content-header {
+          img {
+            z-index: 140;
+          }
+        }
+      }
+    }
+  }
+
+  // login page
+
+  .login-page1 {
+    .left-page {
+      background-color: rgba(var(--dark), 1);
+
+      h3 {
+        color: $white;
+      }
+
+      h4 {
+        color: $white;
+      }
+    }
+  }
+
+  .login-page {
+    .login-bg-img {
+      background-color: rgba(var(--light-dark), 1);
+    }
+  }
+
+  .login-content {
+    background-color: rgba(var(--dark), 1);
+    color: $white;
+
+    h3 {
+      color: $white;
+    }
+
+    h4 {
+      color: $white;
+    }
+
+    .form1 {
+      .form-group {
+        .col-form-label {
+          color: $white;
+        }
+
+        .form-control,
+        .form-select {
+          background-color: rgba(var(--light-dark), 1);
+          border: 1px solid $dark-border;
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+
+        .form-check {
+          h6 {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .form2 {
+      .form-group {
+        .col-form-label {
+          color: $white;
+        }
+
+        .form-control {
+          background-color: rgba(var(--light), 1);
+          border: 1px solid $dark-border;
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+
+        .form-check {
+          h6 {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .login-content-header {
+      img {
+        z-index: 140;
+      }
+    }
+
+    .line {
+      h6 {
+        color: $white;
+      }
+    }
+  }
+
+  .right-login {
+    background-color: rgba(var(--light), 1);
+
+    &.animat-rate {
+      .bg_circle {
+        > div {
+          border: 3px solid #42434a;
+        }
+      }
+
+      .cross {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .cross1 {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .cross2 {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .dot {
+        background-color: #42434a;
+      }
+
+      .dot1 {
+        background-color: #42434a;
+      }
+    }
+
+    .maincircle {
+      background-image: linear-gradient(#191d1f, #191d1fb3, #191d1fb3);
+    }
+
+    .top-circle {
+      background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+    }
+
+    .center-circle {
+      background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+    }
+
+    .bottom-circle {
+      background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+    }
+
+    .bottom-circle1 {
+      background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+    }
+
+    .right-circle {
+      background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+    }
+
+    .right-circle1 {
+      background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+    }
+  }
+
+  .login-page2 {
+    background-color: rgba(var(--dark), 1);
+
+    &.animat-rate {
+      .bg_circle {
+        > div {
+          border: 3px solid #42434a;
+        }
+      }
+
+      .cross {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .cross1 {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .cross2 {
+        background: #42434a;
+
+        &::after {
+          background: #42434a;
+        }
+      }
+
+      .maincircle {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .top-circle {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .center-circle {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .bottom-circle {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .bottom-circle1 {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .right-circle {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .right-circle1 {
+        background-image: linear-gradient(#191d1f, #191d1f73, #191d1f26);
+      }
+
+      .quarterCircle {
+        background-image: linear-gradient(#191d1f);
+      }
+
+      .dot {
+        background-color: #42434a;
+      }
+
+      .dot1 {
+        background-color: #42434a;
+      }
+    }
+  }
+
+  // error 404 page
+  .error-main {
+    .error-contain {
+      h1 {
+        color: $white;
+      }
+
+      h2,
+      h4 {
+        color: $white;
+      }
+    }
+  }
+
+  // about page
+  .about-page {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      color: $white;
+    }
+
+    .about-tab {
+      border: 1px solid $dark-border;
+
+      nav {
+        border-right: 1px solid $dark-border;
+      }
+
+      .nav-pills {
+        .nav-link {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    > .tab-pane {
+      color: $white;
+    }
+  }
+
+  .testimonial-box {
+    &::before {
+      background-color: rgba(var(--dark), 0.8);
+    }
+
+    .test-img {
+      background-color: rgba(var(--dark), 1);
+    }
+  }
+
+  .counter-sec {
+    .counter-title {
+      .title-line {
+        color: $white;
+      }
+    }
+  }
+
+  .counter-box-second {
+    &::before {
+      background-color: rgba(var(--dark), 0.8);
+    }
+  }
+
+  .secure-app-main {
+    background-color: rgba(var(--light), 1);
+
+    .secure-app-content {
+      h1,
+      h4 {
+        color: $white;
+      }
+
+      .ply-main {
+        h3 {
+          color: $white;
+
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    h2,
+    h3,
+    h4,
+    p {
+      color: $white;
+    }
+
+    h2 {
+      border-bottom: 1px solid $dark-border;
+    }
+
+    .team-content {
+      border: 1px solid $dark-border;
+    }
+  }
+
+  .rtl .about-page .about-tab .nav {
+    border-left: 1px solid $dark-border;
+  }
+
+  .testimonial-box {
+    background-color: rgba(var(--light), 1);
+
+    .test-contain {
+      h3,
+      h4,
+      h6 {
+        color: $white;
+      }
+    }
+  }
+
+  //element_new page
+  .element-card {
+    background-color: rgba(var(--light), 1);
+
+    .typography {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span {
+        color: $white;
+      }
+    }
+
+    .heading {
+      border-bottom: 1px solid rgba(var(--dark), 1);
+
+      h2 {
+        color: $white;
+      }
+    }
+  }
+
+  // landing page
+  .app-design-main {
+    .contant-box {
+      h2,
+      h4 {
+        color: $white;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .meetzy-contain {
+      h1,
+      h3,
+      h4,
+      span {
+        color: $white;
+      }
+
+      ul {
+        &.detial-price {
+          li {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .team-work-main {
+    h1,
+    h3,
+    h4,
+    span {
+      color: $white;
+    }
+
+    .team-work-content {
+      h1,
+      h3,
+      h4 {
+        color: $white;
+      }
+
+      .ply-main {
+        h3 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .subscribe-content {
+    h1,
+    h4,
+    span {
+      color: $white;
+    }
+  }
+  // index page css
+  .content-title {
+    h2 {
+      color: rgba($white, 1);
+    }
+  }
+
+  .index-main {
+    .trending-features {
+      .features-contant {
+        h2 {
+          color: rgba($white, 1);
+        }
+
+        h4 {
+          color: rgba($white, 0.5);
+        }
+      }
+    }
+
+    > .app-responsive {
+      .app-text-box {
+        h2 {
+          color: rgba($white, 1);
+        }
+
+        p {
+          color: rgba($white, 0.6);
+        }
+
+        .home-info {
+          li {
+            .factors {
+              h4 {
+                color: rgba($white, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > .team-work-main {
+      .team-work-content {
+        .ply-main {
+          h3 {
+            color: rgba($white, 0.8);
+          }
+
+          &::before {
+            background-image: linear-gradient(to left, rgba(1, 30, 48, 0), rgba(var(--primary-color), 1));
+          }
+        }
+
+        h2 {
+          color: rgba($white, 1);
+        }
+
+        h4 {
+          color: rgba($white, 0.5);
+        }
+      }
+    }
+
+    .template-features {
+      .template-features-content {
+        .d-flex {
+          .flex-grow-1 {
+            h3 {
+              color: rgba($white, 1);
+            }
+
+            p {
+              color: rgba($white, 0.5);
+            }
+          }
+        }
+      }
+    }
+
+    .pricing-section {
+      .pricing-tag {
+        h3 {
+          color: rgba($white, 0.8);
+        }
+      }
+
+      .pricing-box {
+        background-color: rgba($light-color, 0.1);
+
+        > div {
+          .pricing-content {
+            span {
+              color: rgba($white, 0.8);
+            }
+
+            h2 {
+              color: rgba($white, 1);
+            }
+          }
+        }
+
+        h4 {
+          color: rgba($white, 0.8);
+          border-bottom: 1px solid rgba($white, 0.2);
+        }
+
+        .avb-price {
+          li {
+            color: rgba($white, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  .secure-app-main {
+    .secure-app-content {
+      .ply-main {
+        &::after {
+          background-image: linear-gradient(to left, rgba(1, 30, 48, 0), rgba(var(--primary-color), 1));
+        }
+      }
+
+      h2 {
+        color: rgba($white, 1);
+      }
+    }
+  }
+
+  // header_
+  .navbar-light {
+    .navbar-nav {
+      .active {
+        > .nav-link {
+          color: rgba(var(--primary-color), 1) !important;
+        }
+      }
+
+      .nav-link {
+        color: rgba(242, 239, 239, 1) !important;
+      }
+    }
+  }
+
+  header .landing-header .navbar-collapse ul li a {
+    color: rgba(242, 239, 239, 1) !important;
+  }
+
+  .landing-header .dropdown-menu {
+    border: 1px solid $dark-border;
+  }
+
+  header .landing-header.fixed .main-menu .navbar-nav > li > a {
+    color: rgba(242, 239, 239, 1) !important;
+  }
+
+  .login-page2 .login-content-main .login-content2 {
+    background-color: rgba(var(--light), 1);
+  }
+
+  .testimonial-box .test-contain ul.test-icon li {
+    background-color: rgba(var(--dark), 1);
+  }
+
+  .testimonial-slider .owl-nav button.owl-prev,
+  .testimonial-slider .owl-nav button.owl-next {
+    background-color: rgba(var(--light), 1);
+  }
+
+  .search-form .form-group .icon-close svg {
+    stroke: rgba($white, 1);
+  }
+
+  // footer
+  footer {
+    background-color: rgba(var(--light), 1);
+    border-top: 1px solid $dark-border;
+
+    h3,
+    p {
+      color: $white;
+    }
+
+    .links {
+      li {
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    .copyright {
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  .rhap_container {
+    background-color: rgba(var(--light), 1);
+  }
+
+  .call-list-center {
+    h2 {
+      color: rgba($white, 1);
+    }
+  }
+
+  .introjs-tooltipReferenceLayer {
+    .introjs-tooltip {
+      background-color: rgba(var(--light), 1);
+      color: $white;
+    }
+
+    .introjs-arrow.left {
+      border-right-color: rgba(var(--light), 1);
+    }
+  }
+
+  .video-box {
+    background-color: rgba(var(--light), 1);
+
+    .info-block {
+      .star-ratings {
+        ul {
+          li {
+            color: rgba($white, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .player-box {
+    background-color: transparent;
+    border: none;
+
+    .main-wrapper {
+      background-color: rgba(var(--light), 1);
+
+      .song-wrapper {
+        .song-info {
+          .song-info-title {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  /*** App-sidebar***/
+  .app-sidebar {
+    background-color: rgba(var(--dark), 1);
+
+    &.active {
+      .apps-ul {
+        > li {
+          &.active {
+            background-color: rgba(var(--dark), 1);
+          }
+
+          .notes-main {
+            .notes-list {
+              border: 1px solid $dark-border;
+
+              h5 {
+                color: rgba($white, 0.8);
+              }
+            }
+
+            a {
+              &.line {
+                border-top: 1px solid $dark-border;
+              }
+            }
+          }
+
+          .reminder-main {
+            .reminder-list-disp {
+              border: 2px solid $dark-border;
+            }
+
+            .reminder-list {
+              .target-reminder-list {
+                border: 2px solid $dark-border;
+              }
+
+              button {
+                color: $white;
+              }
+            }
+          }
+
+          .file-tab {
+            .tab-content {
+              .link-group {
+                border: 1px solid $dark-border;
+              }
+            }
+          }
+
+          .todo-main {
+            .todo-tab {
+              .tab-content {
+                .todo-task {
+                  h4 {
+                    color: $white;
+                  }
+                }
+              }
+            }
+
+            .todo-main-content {
+              background-color: rgba(var(--light), 1);
+
+              .input-text {
+                input {
+                  background-color: rgba(var(--dark), 1);
+
+                  &::placeholder {
+                    color: $white;
+                  }
+                }
+              }
+
+              .drop-picker {
+                input {
+                  background-color: rgba(var(--light), 1);
+
+                  &:focus {
+                    background-color: rgba(var(--dark), 1);
+                  }
+                }
+
+                .dropdown-menu {
+                  background-color: rgba(var(--light), 1);
+
+                  .dropdown-divider {
+                    background-color: rgba(var(--light), 1);
+
+                    border-bottom: 1px solid $dark-border;
+                  }
+
+                  li {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tab-card {
+      border: 1px solid none;
+    }
+
+    h5,
+    h6,
+    p,
+    h2,
+    h4 {
+      color: $white;
+    }
+
+    .app-list {
+      border-left: 2px solid $dark-border;
+    }
+
+    .default-form {
+      select {
+        background: rgba(var(--gray1), 0.06) !important;
+        color: $white;
+      }
+    }
+
+    .app-list-ul {
+      .title {
+        border-bottom: 1px solid $dark-border;
+      }
+    }
+  }
+
+  .reminder-modal-main {
+    .modal-content {
+      .modal-body {
+        .form-group {
+          ul {
+            &.reminder-count {
+              li {
+                background-color: rgba(var(--light), 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .datepicker {
+    background: rgba(var(--light), 1);
+    color: $white;
+  }
+
+  .datepicker--pointer {
+    background: rgba(var(--light), 1);
+    border-top: 1px solid $dark-border;
+    border-right: 1px solid $dark-border;
+  }
+
+  .datepicker--nav {
+    border-bottom: 1px solid $dark-border;
+  }
+
+  .text-muted {
+    color: $white !important;
+  }
+
+  .meetzy-container .meetzy-main .message-input input {
+    outline: none;
+  }
+
+  .datepicker--cell.-focus- {
+    background: rgba(var(--primary-color), 1) !important;
+  }
+
+  .modal-content {
+    background-color: rgba(var(--dark), 1);
+
+    .default-form {
+      .form-group {
+        input {
+          background-color: rgba(var(--light), 1);
+        }
+
+        textarea {
+          background-color: rgba(var(--light), 1);
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+      }
+
+      select {
+        background: rgba(var(--gray1), 0.06);
+      }
+    }
+
+    .modal-body {
+      .form-group {
+        ul {
+          &.reminder-count {
+            li {
+              + li {
+                background-color: rgba(var(--light), 1);
+              }
+
+              .remi-num {
+                color: rgba(var(--primary-color), 1);
+              }
+
+              .remi-val {
+                color: rgba(var(--primary-color), 1);
+              }
+            }
+          }
+        }
+
+        label {
+          color: $white;
+        }
+
+        input {
+          &::placeholder {
+            color: $white;
+          }
+        }
+
+        .custom-remider-main {
+          .custom-remider-content {
+            .custom-reminder-block {
+              select {
+                color: $white;
+              }
+            }
+
+            .custom-reminder-inline {
+              input {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .add-popup {
+    .modal-header {
+      border-bottom-color: $dark-border;
+    }
+  }
+
+  .reminder-modal-main {
+    .modal-content {
+      .modal-body {
+        .form-group {
+          .custom-remider-main {
+            .custom-remider-content {
+              .custom-reminder-block {
+                select {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slider-block {
+    .slider-main {
+      .slider-contain {
+        h1,
+        h4 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    header {
+      .landing-header {
+        .navbar-collapse {
+          background-color: rgba(var(--dark), 1);
+          border: 1px solid $dark-border;
+        }
+      }
+    }
+
+    header {
+      .landing-header {
+        .navbar-collapse {
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+                color: rgba($white, 0.8) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1367px) {
+    .secure-app-main .secure-app-content {
+      background-color: rgba(var(--light), 0.5);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .error-contain {
+      background-color: rgba(var(--dark), 0.7);
+    }
+  }
+  .modal {
+    .modal-header {
+      border-color: rgba($white, 0.2);
+      .modal-title {
+        color: rgba($white, 1) !important;
+      }
+    }
+    .list-group-item-action {
+      border-color: rgba($white, 0.2);
+      background-color: rgba(var(--light), 1);
+      &:hover {
+        border-color: rgba($white, 0.2);
+        background-color: rgba(var(--light), 1);
+      }
+      .flex-grow-1 {
+        color: rgba($white, 1);
+      }
+    }
+    .border {
+      &.rounded {
+        &.bg-light {
+          background-color: rgba(var(--light), 1) !important;
+          border-color: rgba($white, 0.2) !important;
+          color: rgba($white, 1);
+        }
+      }
+    }
+  }
+  .react-select__control {
+    background-color: rgba(var(--dark), 1) !important;
+    border-color: rgba($white, 0.2);
+  }
+  .custom-input {
+    background-color: rgba(var(--dark), 1) !important;
+    border-color: rgba($white, 0.2);
+  }
+
+  .form-check-input {
+    background-color: rgba(var(--dark), 1);
+    border-color: rgba($white, 0.2);
+  }
+  .border-bottom {
+    border-color: rgba($white, 0.2) !important;
+  }
+  .dropdown-item {
+    border-color: rgba(var(--white), 0.2);
+    color: rgba(var(--white), 1);
+  }
+  .status-privacy-settings {
+    .form-check-label {
+      color: rgba($white, 1);
+    }
+  }
+  .css-qr46ko {
+    background-color: rgba(var(--dark), 1) !important;
+    .css-d7l1ni-option {
+      background-color: rgba(var(--light), 1) !important;
+    }
+  }
+  .meetzy-main .messages .contact-details .search-form .close-search {
+    color: rgba($white, 1);
+  }
+  .search-results-dropdown {
+    background-color: rgba(var(--light), 1);
+    .message-result{
+      background-color: rgba(var(--dark), 1);
+    }
+  }
+  .Toastify__toast-theme--light {
+    background-color: rgba(var(--light), 1);
+  }
+  .features-title,
+  .plan-name{
+    color: #fff9;
+  }
+  .plan-detail-item{
+    .h5{
+      color: #fff9;
+    }
+    .fw-semibold{
+      color: #fff9;
+    }
+  }
+  .list-unstyled{
+    li{
+      div{
+        strong{
+          color: #fff9;
+        }
+      }
+    }
+  }
+  .payment-method-card{
+    .payment-wrap{
+      .flex-grow-1{
+        strong{
+          color: #fff9;
+        }
+      }
+    }
+  }
+  .forgot-password-content{
+    .login-container{
+      .login-wrapper{
+        .table-responsive{
+          .table{
+            &.login-table{
+              thead,tbody{
+                tr{
+                      border-color: rgba(255, 255, 255, 0.2);
+                  th,
+                  td{
+                    background-color: rgba(var(--dark), 1);
+                    color: rgba(var(--primary-color), 1);
+                        border-color: rgba(255, 255, 255, 0.2);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .form-group{
+          .form-label{
+            color: #fff9;
+          }
+          .input-wrapper{
+            input{
+              background-color: rgba(var(--light), 1);
+              color: rgba(255, 255, 255, 0.8);
+              border-color: rgba(255, 255, 255, 0.2);
+            }
+          }
+          .position-relative{
+            .password-wrap{
+              filter: invert(1);
+            }
+          }
+        }
+        .form-content{
+          .login-input{
+            .form-label{
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/***Dark sidebar  ****/
+
+/**Header**/
+.dark-sidebar {
+  .chat-main li .chat-box .date-status .ti-pin2 {
+    &:before {
+      color: $white;
+    }
+  }
+
+  .btn-light {
+    &:focus,
+    &:active,
+    &.active {
+      box-shadow: 0 0 3px 2px $gray;
+    }
+  }
+
+  .meetzy-container {
+    .message-input {
+      .emojis-main {
+        input {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .recent-default {
+        background-color: rgba(var(--dark), 1);
+
+        .recent {
+          background-color: rgba(var(--dark), 1);
+
+          .recent-slider {
+            .recent-box {
+              .recent-profile {
+                border: 3px solid rgba(var(--dark), 1);
+
+                h6 {
+                  color: $white !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .favorite-tab,
+      .document-tab,
+      .contact-list-tab,
+      .notification-tab,
+      .settings-tab {
+        background-color: rgba(var(--dark), 1);
+      }
+
+      .status-tab {
+        background-color: rgba(var(--dark), 1);
+
+        .contact-status-box {
+          h3 {
+            background-color: rgba(var(--light), 1);
+            color: $white;
+          }
+
+          .status-content {
+            border-bottom: 1px solid $dark-border;
+
+            ul {
+              li {
+                .img-status {
+                  border: 2px solid rgba(var(--dark), 1);
+                }
+
+                h4 {
+                  color: $white;
+                }
+              }
+            }
+          }
+
+          .accordion {
+            .accordion-item {
+              background-color: transparent;
+
+              .accordion-header {
+                button {
+                  color: rgba($white, 1);
+                }
+              }
+            }
+          }
+        }
+
+        .my-status-box {
+          border-bottom: 1px solid $dark-border;
+        }
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: $white;
+      }
+
+      h5,
+      h6,
+      p,
+      span {
+        color: rgba($white, 0.6);
+      }
+
+      select {
+        color: $white;
+      }
+
+      .icon-btn {
+        &.btn-outline-light {
+          background-color: rgba(var(--light), 1) !important;
+          color: $white !important;
+        }
+      }
+
+      .search-form {
+        input {
+          background-color: rgba(var(--dark), 1);
+          border: 1px solid $dark-border;
+        }
+
+        &::before {
+          color: $white;
+        }
+      }
+
+      .search2 {
+        border-top: 1px solid $dark-border;
+
+        > div {
+          background-color: rgba(var(--light), 1);
+        }
+      }
+
+      .chat-main {
+        li {
+          &.active {
+            background-color: rgba(var(--light), 1);
+            border-left: 4px solid $dark-border;
+          }
+        }
+      }
+
+      .setting-block {
+        .block {
+          background-color: rgba(var(--dark), 1);
+        }
+      }
+
+      .template-according {
+        .card {
+          background-color: rgba(var(--dark), 1);
+
+          .card-header {
+            background-color: rgba(var(--light), 1);
+          }
+
+          .card-body {
+            background-color: rgba(var(--light), 1);
+          }
+        }
+      }
+
+      .integratin {
+        li {
+          border-bottom: 1px solid $dark-border;
+        }
+      }
+
+      .setting-block {
+        border-top: 1px solid $dark-border;
+
+        .block {
+          border-top: 1px solid $dark-border;
+
+          .help {
+            > li {
+              border-top: 1px dashed $dark-border;
+
+              a {
+                color: rgba($white, 1);
+              }
+            }
+          }
+
+          a {
+            color: rgba(var(--primary-color), 1);
+          }
+        }
+      }
+
+      .template-tab {
+        .nav-tabs {
+          .nav-item {
+            .nav-link {
+              background-color: rgba(var(--light), 1) !important;
+              color: $white !important;
+
+              &.active {
+                color: $white !important;
+                background-color: rgba(var(--primary-color), 1) !important;
+              }
+            }
+          }
+        }
+      }
+
+      .group-main {
+        li {
+          &.active {
+            background-color: rgba(var(--light), 1);
+            border-left: 4px solid $dark-border;
+          }
+        }
+      }
+    }
+
+    .main-nav {
+      border-right: 1px solid $dark-border;
+
+      .logo-wrapper {
+        border-bottom: 1px solid $dark-border;
+      }
+
+      .btn-light {
+        background-color: rgba(var(--light), 1) !important;
+        color: $white !important;
+      }
+    }
+
+    .change-number {
+      .form-control {
+        border-color: $dark-border;
+      }
+    }
+
+    .form-control {
+      background-color: rgba(var(--dark), 1);
+    }
+  }
+
+  .template-tab {
+    &.tab-sm {
+      > .nav-tabs {
+        > .nav-item {
+          .nav-link {
+            svg {
+              fill: rgba($white, 0.7) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #group {
+    .search2 {
+      input {
+        background-color: transparent;
+      }
+    }
+  }
+
+  //responsive
+  @media (max-width: 1367px) {
+    .secure-app-main {
+      .secure-app-content {
+        background-color: rgba(var(--dark), 1);
+      }
+    }
+
+    //header
+    header {
+      .landing-header {
+        &.fixed {
+          .main-menu {
+            .navbar-nav {
+              > li {
+                > a {
+                  color: $white !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    //header
+    .inner-page {
+      header {
+        .landing-header {
+          .navbar-collapse {
+            background-color: rgba(var(--dark), 1);
+            border: 1px solid $dark-border;
+          }
+        }
+      }
+    }
+  }
+}

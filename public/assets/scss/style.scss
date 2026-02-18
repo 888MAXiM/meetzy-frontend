@@ -1,0 +1,48 @@
+// vendors
+@use 'vendors/font-awesome.scss';
+@use 'vendors/feather-icon.scss';
+@use 'vendors/themify-icons.scss';
+@use 'vendors/animate.scss';
+@use 'utils/helpers.scss';
+
+//base
+@use 'base/typography.scss';
+@use 'base/reset.scss';
+
+// // components
+@use 'components/buttons.scss';
+@use 'components/tabs.scss';
+@use 'components/msg.scss';
+@use 'components/dropdown.scss';
+@use 'components/chat-box.scss';
+@use 'components/tootip.scss';
+@use 'components/loader.scss';
+@use 'components/switchery.scss';
+@use 'components/collapse.scss';
+@use 'components/call.scss';
+@use 'components/call-list.scss';
+@use 'components/according.scss';
+@use 'components/tour.scss';
+@use 'components/update.scss';
+
+// //layout
+@use 'layout/grid.scss';
+@use 'layout/sidebar.scss';
+@use 'layout/content.scss';
+@use 'layout/dark.scss';
+@use 'layout/rtl.scss';
+@use 'layout/login.scss';
+@use 'layout/login2.scss';
+@use 'layout/forms.scss';
+@use 'layout/customizer.scss';
+
+// //pages
+@use 'pages/inner-pages';
+@use 'pages/landing';
+@use 'pages/inner-pages-responsive';
+@use 'pages/landing-responsive';
+@use 'pages/landing-page';
+
+// // themes
+@use 'themes/template.scss';
+@use 'themes/responsive.scss';

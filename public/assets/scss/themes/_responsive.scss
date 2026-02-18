@@ -1,0 +1,3575 @@
+@use './../utils/variables' as *;
+/**** Index page Responsive****/
+@media (max-width: 1399px) {
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      width: 310px;
+      min-width: 310px;
+
+      .recent {
+        width: 310px !important;
+      }
+
+      .status-tab {
+        width: 310px;
+      }
+
+      .recent-default {
+        width: 310px !important;
+        min-width: 310px !important;
+      }
+
+      .favorite-tab,
+      .document-tab,
+      .contact-list-tab,
+      .notification-tab,
+      .settings-tab,
+      .recent-default,
+      .status-tab {
+        width: 310px !important;
+        min-width: 310px !important;
+      }
+
+      .logout-btn {
+        width: 310px;
+        min-width: 310px;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        width: calc(100vw - 311px);
+      }
+    }
+
+    .message-input {
+      width: calc(100% - 351px);
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav.on {
+      ~.meetzy-main {
+        .contact-details {
+          width: calc(100vw - 375px);
+        }
+
+        .message-input {
+          width: calc(100% - 425px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 730px) {
+  .meetzy-container {
+    .sidebar-bottom {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .recent {
+    .template-title {
+
+      .mobile-back,
+      .mainnav {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .meetzy-main .messages .contact-details .left.d-flex .media-right .mute i:after {
+    top: 14px;
+    left: 5px;
+  }
+
+  .call-content,
+  .contact-content {
+    overflow: scroll;
+    height: 100%;
+
+    .col-sm-5,
+    .col-sm-7 {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    .col-sm-7 {
+      margin-top: 20px;
+
+      .call-log-clear {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .sidebar-toggle {
+    .main-nav {
+      .logo-wrapper {
+        padding-bottom: 14px;
+      }
+    }
+  }
+
+  .header-icon {
+    margin-top: 14px;
+  }
+
+  .chat-main {
+    li {
+      .chat-box {
+        .details {
+          h5 {
+            max-width: 122px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-box {
+    .details.edit {
+      width: 170px;
+    }
+  }
+
+  .groupuser {
+    .gr-chat-friend-toggle {
+      .gr-chat-friend-content {
+        padding: 10px 20px;
+
+        .chat-main li {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  header {
+    .landing-header {
+      &.fixed {
+        .navbar-collapse {
+          .navbar-nav {
+            margin-left: auto;
+          }
+        }
+      }
+
+      .navbar-collapse {
+        .navbar-nav {
+          border-radius: 15px;
+          padding-left: 0;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .chat-main li {
+    .chat-box {
+      .details {
+        h6 {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+
+  .search2>div {
+    height: 40px;
+  }
+
+  .close-app {
+    display: none;
+  }
+
+  .sidebar-panel-main {
+    bottom: 70px;
+  }
+
+  .contact-chat {
+    >ul {
+      >li {
+
+        &.sent,
+        &.replies {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .emojis-main {
+    .contact-poll {
+      .mr-4 {
+        margin-right: 0.5rem !important;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .message-input {
+      // padding: 12px 25px;
+
+      &:after {
+        bottom: -66px;
+      }
+    }
+
+    .call-content {
+      .user-profile {
+        .user-content {
+          ul {
+            li {
+              font-size: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    li {
+      .chat-box {
+        .details {
+          h6 {
+            max-width: 130px;
+          }
+        }
+      }
+
+      &.active {
+        .details {
+          h6 {
+            letter-spacing: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .notification-close {
+    .details {
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        max-width: 156px !important;
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  .document-tab {
+    .chat-main {
+      .d-flex {
+        .flex-grow-1 {
+          a {
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .notification-tab {
+    .chat-main {
+      .chat-box {
+        .details {
+          h5 {
+            line-height: 1.5;
+          }
+        }
+
+        .profile {
+          top: 10px;
+        }
+
+        .date-status {
+          top: 10px;
+        }
+      }
+
+      li {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      animation: fadeInright 300ms ease-in-out;
+      transition: all 0.3s ease;
+
+      .recent-default {
+        .chat {
+          >.template-tab {
+            &.chat-tabs {
+              .nav-tabs {
+                flex-wrap: nowrap;
+              }
+            }
+          }
+
+          .search-form {
+            width: calc(100% - 30px);
+            left: 15px;
+          }
+        }
+
+        .recent {
+          .recent-slider {
+            .recent-box {
+              &::before {
+                left: 5px;
+              }
+            }
+
+            .owl-stage-outer {
+              height: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .call-log-main,
+  .contact-log-main {
+    li {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .favorite-tab,
+  .document-tab {
+    .chat-box .date-status {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      text-align: right;
+    }
+
+    .chat-main {
+      li {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+  .dynamic-sidebar {
+    .chat-main {
+      .flex-grow-1 {
+        position: absolute;
+        right: 0;
+        top: 8px;
+      }
+    }
+  }
+
+  .m-r-5 {
+    margin-right: 5px;
+  }
+
+  .search2 {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .app-list-ul {
+    li {
+      &.right-sidebar-profile {
+        .profile {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .app-sidebar {
+    .app-list {
+      ul {
+        &.app-list-ul {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav.on {
+        &~.meetzy-main {
+          &.small-sidebar {
+            .contact-details {
+              width: calc(100vw - 500px);
+            }
+          }
+        }
+      }
+    }
+
+    .sidebar-toggle {
+      .main-nav:not(.on) {
+        &~.meetzy-main {
+          &.small-sidebar {
+            width: calc(100% - 390px);
+          }
+        }
+      }
+    }
+
+    .meetzy-container {
+      .meetzy-main {
+        &.small-sidebar {
+          width: calc(100% - 490px);
+        }
+      }
+    }
+  }
+
+
+
+  .chat-main,
+  .call-log-main,
+  .contact-log-main {
+    li {
+
+      .chat-box,
+      .call-box,
+      .contact-box {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            .message-input {
+              width: calc(100% - 790px);
+            }
+
+            .contact-details {
+              width: calc(100vw - 880px);
+            }
+
+            &.small-sidebar {
+              .message-input {
+                width: calc(100% - 539px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .meetzy-container {
+      .meetzy-main {
+        width: calc(100% - 720px);
+
+        &.small-sidebar {
+          .message-input {
+            width: calc(100% - 440px);
+          }
+        }
+      }
+    }
+  }
+
+  //login page
+  .login-content {
+    .line {
+      h6 {
+        &::before {
+          width: 4rem;
+        }
+
+        &::after {
+          width: 4rem;
+        }
+      }
+    }
+  }
+
+  //header
+  header {
+    .landing-header {
+      .navbar-collapse {
+        width: 100%;
+      }
+    }
+  }
+
+  // video call modall //
+
+  .videocall,
+  .videocallhang {
+    &.call-modal {
+      .small-image {
+        width: 180px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .main-menu {
+    .collapse {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      width: 290px;
+      min-width: 290px;
+
+      .recent-default {
+        width: 290px !important;
+        min-width: 290px !important;
+      }
+
+      .favorite-tab,
+      .document-tab,
+      .contact-list-tab,
+      .notification-tab,
+      .settings-tab,
+      .recent-default,
+      .status-tab {
+        width: 290px !important;
+        min-width: 290px !important;
+      }
+
+      .recent {
+        width: 290px !important;
+      }
+
+      .status-tab {
+        width: 290px;
+      }
+
+      .logout-btn {
+        width: 290px;
+        min-width: 290px;
+      }
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav.on {
+      ~.meetzy-main {
+        .contact-details {
+          width: calc(100vw - 355px);
+        }
+
+        .message-input {
+          width: calc(100% - 405px);
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        width: calc(100vw - 291px);
+      }
+    }
+
+    .message-input {
+      width: calc(100% - 331px);
+    }
+  }
+
+  .navbar-expand-sm {
+    .navbar-nav {
+      .dropdown-menu {
+        position: absolute !important;
+      }
+    }
+  }
+
+  .index-main {
+    .client-images {
+      img {
+        width: 2000px;
+      }
+    }
+  }
+
+  header {
+    .landing-header {
+      .navbar-collapse {
+        .navbar-nav {
+          background-color: transparent;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .landing-page {
+    .landing-header {
+      .navbar-light {
+        .navbar-nav {
+          .active {
+            >.nav-link {
+              color: rgba(0, 0, 0, 0.9);
+            }
+          }
+
+          .nav-link {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-version-sec .meetzy-back-block .chit-chat2 {
+    display: none;
+  }
+
+  .collaboration-main .collaboration-content ul.collab-tab.nav.nav-pills li.nav-item a.nav-link {
+    .tab-content {
+      h3 {
+        margin-bottom: 3px !important;
+      }
+    }
+
+    .tab-main .tab-img i {
+      font-size: 24px;
+    }
+  }
+
+  .chat-landing-page {
+    .content-title {
+      margin-bottom: 35px;
+    }
+  }
+
+  .emojis-main {
+    .contact-poll {
+      .contact-poll-content:before {
+        left: 30px;
+      }
+    }
+  }
+
+  header {
+    padding-top: 0;
+    padding-bottom: 0 !important;
+    clear: both;
+
+    .landing-header {
+      .dropdown-menu.show {
+        position: relative;
+        width: calc(100% - 30px);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .logo-block {
+        img {
+          height: 40px;
+        }
+      }
+
+      .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        background-color: $white;
+        display: unset;
+      }
+
+      .navbar-collapse {
+        position: absolute;
+        top: 64px;
+        background-color: $white;
+        right: 0;
+        width: 36%;
+        border-radius: $radius15;
+        padding: 20px 0;
+        border: 1px solid rgba(var(--gray1), 1);
+
+        &:not(.show) {
+          display: none !important;
+        }
+
+        .navbar-nav {
+          display: block;
+
+          .nav-item {
+            display: block;
+
+            .nav-link {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              color: rgba($black, 0.8) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        .media-right {
+          ul {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .messages {
+      .contact-details {
+        .col {
+          width: 100px;
+        }
+
+        .left.d-flex {
+          // .flex-grow-1 {
+          //   display: none;
+          // }
+        }
+      }
+    }
+  }
+
+  .template-landing {
+    header {
+      .landing-header {
+        .navbar-collapse {
+          padding: 20px;
+
+          .navbar-nav {
+            .nav-item {
+              margin-bottom: 20px;
+              padding-left: 0;
+              margin-left: 0;
+              line-height: 1;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              >.nav-link {
+                color: rgba(0, 0, 0, 0.7) !important;
+                transition: all 0.5s ease;
+                padding: 0;
+
+                &:hover {
+                  color: rgba(var(--primary-color), 1) !important;
+                }
+              }
+            }
+          }
+        }
+
+        .dropdown-menu {
+          .nav-link {
+            a {
+              transition: all 0.5s ease;
+
+              &:hover {
+                color: rgba(var(--primary-color), 1) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rate-us {
+    padding-top: 40px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        .left.d-flex {
+          .flex-grow-1 {
+            &:before {
+              top: -4px;
+            }
+          }
+        }
+
+        .flex-grow-1 {
+          // h5 {
+          //   display: none;
+          // }
+        }
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .contact-details {
+                ul {
+                  li {
+                    padding-left: 21px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ~.meetzy-main {
+          .messages {
+            .contact-details {
+              ul {
+                li {
+                  padding-left: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .meetzy-container {
+      .meetzy-main {
+        &.small-sidebar {
+          width: calc(100% - 490px);
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        .media-right {
+          ul {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .message-input {
+      // padding: 12px 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .meetzy-main {
+    .messages {
+      .calls {
+        .chat-friend-toggle {
+          .icon-btn {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .message-input:after {
+      bottom: -62px;
+    }
+  }
+
+  .sidebar-active {
+    .meetzy-container {
+      .meetzy-main {
+        &.small-sidebar {
+          .messages {
+            .contact-details {
+              padding: 15px 30px;
+              width: calc(100vw - 418px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on~.meetzy-main {
+          &.small-sidebar {
+            .contact-details {
+              width: calc(100vw - 418px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .img-text {
+    .chat-box {
+      .details {
+        h4 {
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-right-sidebar {
+      .recent-default {
+        .recent {
+          .recent-slider {
+            padding: 0 20px;
+          }
+        }
+      }
+
+      .contact-profile {
+        padding: 20px;
+      }
+    }
+
+    &.sidebar-overlap {
+      .meetzy-main {
+        .messages {
+          .contact-details {
+            width: calc(100%) !important;
+          }
+        }
+      }
+    }
+
+    &.sidebar-overlap {
+
+      .meetzy-main,
+      .message-input,
+      .contact-details {
+        width: calc(100%) !important;
+      }
+    }
+  }
+
+  .chat-landing-page {
+    .landing_page_slider {
+      min-height: 800px;
+      background-position: bottom;
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      height: calc(100vh - 0px);
+      min-height: calc(100vh - 0px);
+    }
+
+    .message-input {
+      // padding: 10px 20px;
+    }
+  }
+
+  .secure-app-main {
+    height: 350px;
+
+    .secure-app-content {
+      height: 350px;
+    }
+  }
+
+  [class*='introjs'] {
+    display: none;
+  }
+
+  .main-nav.introjs-fixParent,
+  .sidebar-top.introjs-relativePosition {
+    display: block;
+  }
+
+  header {
+    .landing-header.fixed {
+      padding: 5px 15px;
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .message-input {
+                width: calc(100% - 215px);
+              }
+            }
+          }
+
+          &~.show-recent {
+            &~.meetzy-main {
+              &.small-sidebar {
+                .messages {
+                  .contact-details {
+                    width: 33.3vw !important;
+
+                    ul {
+                      li {
+                        padding-left: 9px;
+                      }
+                    }
+                  }
+                }
+
+                .message-input {
+                  width: calc(100% - 590px);
+                }
+              }
+            }
+          }
+        }
+
+        &~.show-recent {
+          &~.meetzy-main {
+            &.small-sidebar {
+              .messages {
+                .contact-details {
+                  width: 44vw;
+
+                  ul {
+                    li {
+                      padding-left: 24px;
+                    }
+                  }
+                }
+              }
+
+              .message-input {
+                width: calc(100% - 500px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .meetzy-container {
+      .meetzy-main {
+        &.small-sidebar {
+          width: calc(100% - 92px);
+
+          .contact-details {
+            width: 84vw;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav {
+      &.on {
+        &~.show-recent {
+          &~.meetzy-main {
+            .messages {
+              .contact-details {
+                width: 42.5vw !important;
+
+                ul {
+                  li {
+                    padding-left: 21px;
+                  }
+                }
+              }
+            }
+
+            .message-input {
+              width: calc(100% - 500px);
+            }
+          }
+        }
+      }
+
+      &~.show-recent {
+        &~.meetzy-main {
+          .messages {
+            .contact-details {
+              width: 53vw;
+
+              ul {
+                li {
+                  padding-left: 9px;
+                }
+              }
+            }
+          }
+
+          .message-input {
+            width: calc(100% - 400px);
+          }
+        }
+      }
+    }
+  }
+
+  .recent {
+    .template-title {
+      .close-contentbtn {
+        display: flex;
+      }
+    }
+  }
+
+  // elements.html
+  .element-card {
+    .typography {
+      .font_label {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  //login page
+  .login-content {
+    .line {
+      h6 {
+        &::before {
+          width: 3.5rem;
+        }
+
+        &::after {
+          width: 3.5rem;
+        }
+      }
+    }
+  }
+
+  .mr-3 {
+    margin-right: 10px !important;
+  }
+
+  footer {
+    .footer_order_2 {
+      order: -1;
+    }
+
+    .footer_order_1 {
+      order: -2;
+    }
+
+    .footer_order_3 {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  // footer css //
+  footer {
+    .footer-block {
+      display: flex;
+      justify-content: center;
+
+      >div {
+        margin-top: 30px;
+
+        &:last-child,
+        &:first-child {
+          order: -1;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  // voice call modal //
+  .audiocall1,
+  .audiocall2,
+  .videocall,
+  .videocallhang,
+  .conferencecall {
+
+    &.call-modal,
+    &.call-modal,
+    &.call-modal,
+    &.call-modal,
+    &.call-modal {
+      min-height: 530px;
+    }
+  }
+
+  .videocall,
+  .videocallhang {
+    &.call-modal {
+      .small-image {
+        width: 150px;
+        height: 200px;
+        left: 20px;
+      }
+    }
+  }
+
+  .real-time-customizer,
+  .bonus-page,
+  .collaboration-main,
+  .dark-light,
+  .easy-navigation {
+    .chit-chat5 {
+      display: none;
+    }
+  }
+
+  // sinipate modla //
+  .snippet-modal-main {
+    .modal-dialog {
+      width: 600px;
+    }
+  }
+
+  .pol-modal-main {
+    .modal-dialog {
+      width: 600px;
+    }
+  }
+
+  // not modal //
+  .notes-modal-main {
+    .modal-content {
+      height: 450px;
+
+      .modal-body {
+        overflow: auto;
+        padding: 0;
+      }
+
+      .card {
+        .card-header {
+          padding: 20px;
+        }
+
+        .card-body {
+          padding: 20px;
+
+          h1 {
+            padding-bottom: 15px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        .left.d-flex {
+          .media-right {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav {
+      transition: none;
+
+      &.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        &:has(.header-icon.active)~.meetzy-left-sidebar {
+          z-index: 99;
+        }
+
+        ~.meetzy-main {
+          .contact-details {
+            width: calc(100vw - 0px);
+          }
+
+          .message-input {
+            width: calc(100vw - 40px);
+          }
+        }
+      }
+    }
+  }
+
+  .recent .template-title .mainnav {
+    margin: 0 8px;
+  }
+
+  .profile-box .details.edit {
+    width: 90%;
+  }
+
+  .meetzy-container {
+    overflow: hidden;
+  }
+
+  .mobile-sidebar,
+  .mobile-back {
+    display: inline-flex;
+  }
+
+  .search2>div {
+    width: 100%;
+    height: 50px;
+  }
+
+  .template-tab.tab-icon {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          svg {
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .chat,
+  .meetzy-left-sidebar {
+    .details {
+      h6 {
+        max-width: unset;
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (800 - 320)));
+        padding-top: 6px;
+      }
+    }
+  }
+
+  .meetzy-container {
+    .main-nav {
+      &.on {
+        ~.meetzy-left-sidebar {
+          .dynamic-sidebar {
+            width: 290px;
+            min-width: 290px;
+          }
+        }
+      }
+    }
+
+    .meetzy-left-sidebar {
+      .recent-default {
+        .chat {
+          .search {
+            margin-top: 10px;
+          }
+
+          h2 {
+            font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (800 - 320)));
+          }
+
+          >.template-tab.chat-tabs {
+            >ul {
+              >li {
+                >a {
+                  svg {
+                    height: 14px;
+                    width: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .recent {
+          width: 100vw;
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      position: fixed;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      animation: unset;
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav:not(.on) {
+      &~.meetzy-main {
+        &.small-sidebar {
+          .message-input {
+            width: calc(100% - 41px);
+          }
+
+          .messages {
+            .contact-details {
+              width: calc(100vw - 0px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-main {
+      .message-input {
+        transition: none;
+      }
+
+      .messages {
+        .contact-details {
+          width: calc(100vw - 3px);
+          animation: fadeInRight 300ms ease-in-out;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    .meetzy-main {
+      width: 100vw;
+      max-width: 100vw;
+      overflow: hidden;
+    }
+
+    &.mobile-menu {
+      .meetzy-left-sidebar {
+        display: none;
+        width: 0;
+        min-width: 0;
+        opacity: 0;
+        animation: fadeInRight 300ms ease-in-out;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  ul {
+    &.chat-cont-setting {
+      left: unset;
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .index-main {
+    .client-images {
+      img {
+        width: 1500px;
+      }
+    }
+  }
+
+  .msg-box {
+    >li {
+      &.gallery-img {
+        width: 210px;
+      }
+    }
+  }
+
+  .videocall.call-modal {
+    .videocall-details {
+      padding: 15px;
+    }
+  }
+
+  .modal-dialog-centered .modal-content {
+    max-height: 90vh;
+    overflow: auto;
+  }
+
+  .zoomcontent {
+    display: none;
+  }
+
+  .chat-landing-page {
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .bonus-page {
+    .demo-title {
+      margin-top: 10px;
+    }
+  }
+
+  .rate-us {
+    .rate_us-section {
+      h2 {
+        margin: 20px 0;
+      }
+
+      .rate-section {
+        li {
+          i {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-panel-main {
+    display: none;
+  }
+
+  .meetzy-loader {
+    h3 {
+      margin-top: 15px;
+      padding: 0 15px;
+      line-height: 1.4;
+    }
+
+    img {
+      height: 80px;
+    }
+  }
+
+  .videocall {
+    &.call-modal {
+      .small-image {
+        left: 20px;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        width: calc(100vw - 390px);
+
+        .left.media {
+          .media-right {
+            .icon-btn {
+              i {
+                font-size: 21px;
+              }
+
+              svg {
+                vertical-align: unset;
+                stroke-width: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .messages {
+                .contact-details {
+                  width: 66.3vw !important;
+
+                  ul {
+                    li {
+                      padding-left: 33px;
+                    }
+                  }
+                }
+              }
+
+              .message-input {
+                width: calc(100% - 200px);
+              }
+            }
+
+            .messages {
+              .contact-details {
+                ul {
+                  li {
+                    padding-left: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ~.meetzy-main {
+          .messages {
+            .contact-details {
+              ul {
+                li {
+                  padding-left: 28px;
+                }
+              }
+            }
+          }
+
+          &.small-sidebar {
+            .messages {
+              .contact-details {
+                ul {
+                  li {
+                    padding-left: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-details {
+    .media-right {
+      ul {
+        display: flex;
+      }
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav {
+      &~.show-recent {
+        &~.meetzy-main {
+          .messages {
+            .contact-details {
+              width: 39vw;
+
+              ul {
+                li {
+                  padding-left: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      text-align: center;
+    }
+  }
+
+  .links_horizontal {
+    p {
+      text-align: center !important;
+    }
+  }
+
+  // elements.html
+  .element-card {
+    .typography {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 10px;
+      }
+
+      .font_label {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .sidebar-panel-main {
+    right: 15px;
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        width: calc(100vw - 390px);
+
+        .left.d-flex {
+          .media-right {
+            .icon-btn {
+              i {
+                font-size: 21px;
+              }
+
+              svg {
+                vertical-align: unset;
+                stroke-width: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .messages {
+                .contact-details {
+                  width: 66.3vw !important;
+
+                  ul {
+                    li {
+                      padding-left: 33px;
+                    }
+                  }
+                }
+              }
+
+              .message-input {
+                width: calc(100% - 200px);
+              }
+            }
+
+            .messages {
+              .contact-details {
+                ul {
+                  li {
+                    padding-left: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ~.meetzy-main {
+          .messages {
+            .contact-details {
+              ul {
+                li {
+                  padding-left: 28px;
+                }
+              }
+            }
+          }
+
+          &.small-sidebar {
+            .messages {
+              .contact-details {
+                ul {
+                  li {
+                    padding-left: 2px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-details {
+    .media-right {
+      ul {
+        display: flex;
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      text-align: center;
+    }
+  }
+
+  .links_horizontal {
+    .text-right {
+      text-align: center !important;
+    }
+  }
+
+  .element-card {
+    .typography {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 10px;
+      }
+
+      .font_label {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // footer
+
+  .downlaod {
+    .footer-title {
+      h2 {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .footer-btn {
+      .btn {
+        margin-top: 15px;
+        margin-left: unset;
+
+        &:first-child {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  // footer
+  footer {
+    .footer-title {
+      .according-menu {
+        font: normal normal normal 14px/1 FontAwesome;
+
+        &:before {
+          content: '\f107';
+          position: absolute;
+          right: 20px;
+          top: 0px;
+          color: rgba(var(--primary-color), 1);
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .footer-title {
+      &.active {
+        .according-menu {
+          font: normal normal normal 14px/1 FontAwesome;
+
+          &:before {
+            content: '\f106';
+            position: absolute;
+            right: 20px;
+            top: 2px;
+            color: rgba(var(--primary-color), 1);
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .links {
+      li {
+        +li {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .logo {
+      img {
+        width: 105px;
+        height: auto;
+      }
+    }
+
+    .footer-mobile-title {
+      display: block;
+    }
+
+    .footer-block {
+      >div {
+        &:nth-child(n + 2) {
+          margin-top: 15px !important;
+
+          .footer-title {
+            border-top: 1px solid rgba(var(--primary-color), 0.2);
+          }
+        }
+      }
+    }
+
+    h3 {
+      margin-top: 15px !important;
+      margin-bottom: 0 !important;
+    }
+
+    .footer-contant {
+      margin-top: 20px;
+
+      .footer-btn {
+        display: grid;
+        width: fit-content;
+
+        .btn {
+          display: inline-flex;
+          padding: 10px 20px;
+
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .social-group {
+        li {
+          a {
+            width: 28px;
+            height: 28px;
+
+            i {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+      ul {
+        li {
+          a {
+            font-size: 13px;
+
+            &::before {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer_order_1 {
+    width: 60%;
+    float: left;
+  }
+
+  .footer_order_2 {
+    width: 40%;
+    float: right;
+  }
+
+  .footer_order_3 {
+    width: 33%;
+    float: left;
+  }
+
+  // element page
+  .img-10 {
+    width: 5px !important;
+  }
+
+  .img-20 {
+    width: 10px !important;
+  }
+
+  .img-30 {
+    width: 20px !important;
+  }
+
+  .img-40 {
+    width: 25px !important;
+  }
+
+  .img-50 {
+    width: 35px !important;
+  }
+
+  .img-60 {
+    width: 45px !important;
+  }
+
+  .img-70 {
+    width: 55px !important;
+  }
+
+  .img-80 {
+    width: 65px !important;
+  }
+
+  .img-90 {
+    width: 75px !important;
+  }
+
+  .img-100 {
+    width: 85px !important;
+  }
+
+  // modal popup css //
+  .add-popup {
+    .modal-footer {
+      padding: 20px 20px;
+    }
+  }
+
+  footer {
+    .footer-mobile-title {
+      h3 {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1640px) and (min-width: 1500px) {
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        ul {
+          li {
+            padding: 0 8px;
+
+            &:first-child {
+              padding-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1590px) and (min-width: 1500px) {
+  .contact-details {
+    .flex-grow-1 {
+      h5 {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .contact-details {
+    .profile {
+      margin-right: 0px !important;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .template-tab {
+    &.tab-icon {
+      .nav-tabs {
+        .nav-item {
+          margin: 0 7px;
+
+          .nav-link {
+            padding: 6px 15px;
+            line-height: unset !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .contact-details {
+    .profile {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-btn.btn-outline-primary:focus {
+    box-shadow: none;
+  }
+
+  .app-sidebar {
+    &.active {
+      .apps-ul {
+        .template-title {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  .message-input {
+    .emojis-main {
+      // .btn-outline-primary {
+      //   background-color: transparent !important;
+      // }
+
+      .toggle-sticker {
+        margin-right: 6px !important;
+      }
+
+      .dot-btn {
+        margin-right: 6px !important;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .chat-content {
+    .message-input {
+      .emojis-main {
+        .contact-poll {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-main {
+
+      .contact-content,
+      .call-content {
+        padding: 20px;
+      }
+
+      .messages {
+        .contact-details {
+          .col-7 {
+            padding-right: 0;
+
+            .media-right {
+              order: -1;
+
+              li {
+                padding-left: 10 !important;
+                padding-right: 8px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .emojis-main {
+    .contact-poll {
+      .contact-poll-content {
+        bottom: 60px;
+        left: -23px;
+      }
+    }
+  }
+
+  .contact-chat {
+    margin-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  footer {
+    .footer-title {
+      .according-menu {
+        font: normal normal normal 14px/1 FontAwesome;
+      }
+    }
+
+    .footer-title {
+      &.active {
+        .according-menu {
+          font: normal normal normal 14px/1 FontAwesome;
+        }
+      }
+    }
+
+    .footer_order_1,
+    .footer_order_2,
+    .footer_order_3 {
+      width: 100%;
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .contact-details {
+                width: 57.3vw !important;
+
+                ul {
+                  li {
+                    padding-left: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ~.meetzy-main {
+          .messages {
+            .contact-details {
+              width: calc(100% - 0px) !important;
+
+              ul {
+                li {
+                  padding-left: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .message-input {
+      &:after {
+        bottom: -60px;
+      }
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav:not(.on) {
+      ~.meetzy-main {
+        &.small-sidebar {
+          width: calc(100% - 0px) !important;
+
+          .message-input {
+            width: calc(100% - 44px);
+          }
+        }
+      }
+    }
+  }
+
+  .profile {
+    &.unreachable {
+      &:before {
+        bottom: 0;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .message-input {
+      // height: 60px;
+      // padding: 14px 10px;
+
+      input {
+        width: calc(100% - 190px);
+      }
+
+      .icon-btn {
+        height: 32px;
+        width: 32px;
+
+        i {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .messages {
+      height: calc(100vh - 0px);
+      min-height: calc(100vh - 0px);
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav {
+      &.on {
+        &~.meetzy-main {
+          .messages {
+            .contact-details {
+              ul {
+                li {
+                  padding-left: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // landing page
+    .pricing-box {
+      margin: 10px;
+      padding: 20px;
+
+      ul {
+        &.avb-price {
+          li {
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    //footer
+    footer {
+      padding-bottom: 0px;
+
+      .footer-mobile-title {
+        display: block !important;
+      }
+
+      .footer-title {
+        .according-menu {
+          font: normal normal normal 14px/1 FontAwesome;
+        }
+      }
+
+      .footer-title {
+        &.active {
+          .according-menu {
+            font: normal normal normal 14px/1 FontAwesome;
+          }
+        }
+      }
+
+      .footer_order_3 {
+        margin-top: 0px;
+      }
+
+      .downlaod {
+        margin-top: 0px;
+
+        .footer-btn {
+          .btn {
+            margin-left: 15px;
+            margin-top: unset;
+          }
+        }
+      }
+
+      .links {
+        margin-top: 0px;
+      }
+
+      .section-py-space {
+        padding-bottom: 30px;
+      }
+
+      .footer-contant {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .landing_page_slider {
+    .animated-img-2 {
+      display: none;
+    }
+  }
+
+  .sidebar-toggle .main-nav.on {
+    position: absolute;
+    left: 0;
+    z-index: 9999 !important;
+    display: grid;
+  }
+
+  .meetzy-container .main-nav.on~.meetzy-left-sidebar .recent-default {
+    width: 100vw;
+    min-width: 100vw;
+  }
+.meetzy-container .main-nav.on~.meetzy-left-sidebar{
+  width: 100%;
+}
+
+
+  // .meetzy-container .main-nav.on ~ .meetzy-left-sidebar .dynamic-sidebar.recent-default .recent,
+  // .meetzy-container .main-nav.on ~ .meetzy-left-sidebar .dynamic-sidebar.recent-default .chat {
+  //   width: 100vw;
+  // }
+
+  .landing_page_slider {
+    .animated-img-2 {
+      display: none;
+    }
+  }
+
+  .chat-landing-page {
+    .landing_page_slider {
+      min-height: 450px;
+    }
+  }
+
+  .chat-landing-page {
+    .landing_page_slider {
+      .landing_page_slider-main {
+        .landing_page_slider-contain {
+          h1 {
+            color: rgba(var(--dark-color), 1) !important;
+
+            -webkit-text-fill-color: unset;
+          }
+
+          h4 {
+            color: rgba(var(--dark-color), 1) !important;
+
+            span {
+              color: rgba(var(--dark-color), 1) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .inner-page {
+    header {
+      padding-top: 0px;
+      padding-bottom: 15px;
+
+      .landing-header {
+        .navbar-collapse {
+          width: 100% !important;
+        }
+      }
+    }
+
+    header {
+      .landing-header {
+        .navbar-toggler {
+          top: 12px;
+        }
+      }
+    }
+  }
+
+  .template-landing {
+    header {
+      .landing-header {
+        .navbar-collapse {
+          width: 100% !important;
+
+          .navbar-nav {
+            .nav-item {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-active {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .contact-details {
+                width: 55.3vw !important;
+
+                ul {
+                  li {
+                    padding-left: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .meetzy-main {
+          .messages {
+            .contact-details {
+              ul {
+                li {
+                  padding-left: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // modal popup css //
+  .add-popup {
+    .modal-body {
+      padding: 15px;
+    }
+
+    .modal-footer {
+      .btn {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  // .msg-chat-modal,
+  // .msg-chat-modal {
+  //   .chat-main {
+  //     li {
+  //       padding-left: 10px;
+  //       padding-right: 10px;
+  //     }
+  //   }
+  // }
+
+  .videocall {
+    &.call-modal {
+      .small-image {
+        width: 100px;
+        height: 120px;
+        bottom: 31%;
+        display: none !important;
+      }
+    }
+  }
+
+  .chat-landing-page {
+    .landing_popups {
+      .btn {
+        padding: 10px 18px;
+      }
+    }
+  }
+
+  .rate-us {
+    .rate_us-section {
+      .rate-section {
+        margin: 0 0 18px 0;
+      }
+
+      .rate_btn {
+        padding: 10px 35px;
+      }
+    }
+  }
+
+  .snippet-modal-main {
+    padding: 15px;
+
+    .modal-dialog {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .pol-modal-main {
+    padding: 15px;
+
+    .modal-dialog {
+      width: 100%;
+      margin: 0;
+    }
+
+    .modal-content {
+      .modal-body {
+        .creat-poll-btn {
+          margin-top: 20px;
+        }
+
+        .form-group {
+          .post-poll {
+            padding: 15px;
+
+            ul {
+              display: block;
+
+              li {
+                text-align: center;
+
+                p {
+                  padding: 15px;
+                  padding-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .allow-group {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .add-popup {
+
+    .modal-header,
+    .modal-footer {
+      padding: 15px 25px;
+    }
+  }
+
+  // todo modal //
+
+  .create-todo-main-modal {
+    .todo-task {
+      .todo-main-content {
+        .drop-picker {
+          margin: 15px 15px 0 15px;
+        }
+      }
+    }
+  }
+
+  .todo-main-modal {
+    .todo-task {
+      .todo-main-content {
+        .drop-picker {
+          margin: 15px 15px 0 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .meetzy-main {
+    .message-input {
+      button {
+        // width: 50px !important;
+
+        svg {
+          height: 16px;
+          width: 16px;
+          // stroke: white;
+        }
+      }
+    }
+  }
+
+  .add-popup {
+    .close {
+      top: 15px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Toastify__toast {
+    width: 250px;
+    margin-left: auto;
+  }
+
+  .emojis-main {
+    .contact-poll {
+      .contact-poll-content {
+        left: 0;
+      }
+    }
+  }
+
+  .msg-setting-main {
+    .document {
+      .document-icon {
+        height: 46px;
+        width: 46px;
+      }
+    }
+  }
+
+  .contact-chat {
+    >ul {
+      >li {
+        &.replies {
+          .document {
+            gap: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .profile.online:before {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .contact-chat {
+    >ul {
+      >li {
+        &.sent {
+          .contact-name {
+            .msg-box {
+              .msg-setting-main {
+                .badge.badge-img {
+                  bottom: -16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // .search-form {
+  //   &:before {
+  //     top: 14px;
+  //   }
+  // }
+
+  .meetzy-container {
+    .meetzy-main {
+      .message-input {
+        margin: 0 !important;
+        bottom: 0;
+        border-radius: 2px;
+        width: calc(100% - 0px) !important;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .call-content {
+      .call-log-main {
+        .coll-log-group {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .msg-box {
+    >li {
+      &.gallery-img {
+        width: 180px;
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        ul {
+          li {
+            padding: 0 4px;
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dot-btn.grow:after {
+    top: -6px;
+    right: -4px;
+  }
+
+  .template-tab.tab-icon .nav-tabs .nav-item .nav-link {
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 1.2 !important;
+
+    svg {
+      height: 18px;
+    }
+  }
+
+  .dot-btn:before {
+    top: 0px;
+  }
+
+  .meetzy-container .main-nav.on~.meetzy-left-sidebar .dynamic-sidebar:not(.recent-default).active {
+    min-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    z-index: 9999;
+    transition: all 0.3s ease;
+  }
+
+  .groupuser {
+    .gr-chat-friend-toggle {
+      .gr-chat-friend-content {
+        width: 295px;
+
+        &::before {
+          right: 125px;
+        }
+      }
+    }
+  }
+
+  .groupuser {
+    .gr-chat-friend-toggle {
+      .gr-chat-friend-content {
+        margin-right: -100px;
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .recent-default {
+        .chat .search-form {
+          height: 50px;
+          top: 10px;
+        }
+      }
+    }
+  }
+
+  .emojis-main .contact-poll .contact-poll-content {
+    padding: 20px;
+
+    ul {
+      li {
+        margin-bottom: 8px;
+        font-size: 14px;
+        padding-left: 0px;
+
+        a {
+          svg {
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-chat>ul>li.replies .msg-box li:first-child h5 {
+    border-radius: 30px 25px 0 30px;
+  }
+
+  .chat-landing-page {
+    .landing_page_slider {
+      min-height: 380px;
+    }
+  }
+
+  .template-tab>.nav-tabs>.nav-item .nav-link {
+    padding: 7px calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  }
+
+  .chat-main {
+    li {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .msg-setting-main {
+    .msg-dropdown-main {
+      .msg-dropdown {
+        right: 0;
+        left: unset;
+      }
+    }
+  }
+
+  .replies {
+    .msg-setting-main {
+      .msg-dropdown-main {
+        .msg-dropdown {
+          left: 0;
+          right: unset;
+        }
+      }
+    }
+  }
+
+  // .msg-box {
+  //   > li {
+  //     h5,
+  //     .document,
+  //     .auto-gallery {
+  //       padding: 10px 20px;
+  //     }
+  //   }
+  // }
+
+  .contact-chat {
+    margin-top: 55px;
+
+    .profile {
+      height: 30px !important;
+      min-width: 30px !important;
+      width: 30px !important;
+      border-radius: 15px;
+    }
+
+    >ul>li {
+
+      &.sent,
+      &.replies {
+        .auto-gallery {
+          li {
+            height: 32px;
+            width: 32px;
+            border-radius: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      &+li {
+        margin-top: 20px;
+      }
+
+      &.replies {
+        .document {
+          padding: 10px 25px;
+
+          i {
+            margin-right: 15px;
+            font-size: 24px;
+          }
+        }
+
+        .document .details {
+          display: none;
+        }
+
+        .d-flex .profile {
+          margin-left: 0.7rem !important;
+        }
+      }
+    }
+  }
+
+  .meetzy-main .messages .contact-details {
+    padding: 10px;
+    top: 20px;
+  }
+
+  .contact-chat {
+    .sent {
+      .profile {
+        &.mr-4 {
+          margin-right: 0.7rem !important;
+        }
+      }
+    }
+  }
+
+  .chat-tabs {
+    ul {
+      li {
+        &.nav-item {
+          width: 100%;
+          margin: 0 7px;
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-main {
+      .messages {
+        .contact-details {
+          width: calc(100vw - 0px);
+          top: 0px;
+        }
+      }
+    }
+
+    .meetzy-left-sidebar {
+      .recent-default {
+        .recent {
+          padding-top: 0px;
+
+          .recent-slider {
+            padding-top: 0;
+          }
+
+          .mobile-back {
+            // background-color: transparent !important;
+            // width: unset;
+            font-size: 13px;
+
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-chat .profile {
+    height: 40px;
+    width: 40px;
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .recent-default {
+        .chat {
+          .template-title {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .emojis-main {
+
+    .emojis-contain,
+    .sticker-contain {
+      left: 0;
+      padding: 10px;
+
+      &.open {
+        bottom: 60px;
+        width: 295px;
+        height: 255px;
+      }
+    }
+  }
+
+  .app-sidebar {
+    .app-list {
+      z-index: 999;
+      position: relative;
+    }
+
+    &.active {
+      .apps-ul {
+        >li {
+          &.active {
+            right: 0;
+            z-index: 9999;
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .message-input {
+      input {
+        width: calc(100% - 75px);
+        font-size: 12px;
+        padding: 0;
+      }
+    }
+  }
+
+  .sidebar-toggle {
+    .main-nav:not(.on) {
+      ~.meetzy-main {
+        &.small-sidebar {
+          width: calc(100% - 00px);
+
+          .message-input {
+            width: calc(100% - 00px);
+          }
+        }
+      }
+    }
+  }
+
+  .toggle-sticker {
+    display: none;
+  }
+
+  .sidebar-active {
+    .meetzy-container {
+      .meetzy-main {
+        &.small-sidebar {
+          width: calc(100% - 1px);
+        }
+      }
+    }
+
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          ~.meetzy-main {
+            &.small-sidebar {
+              .contact-details {
+                width: 89.3vw !important;
+              }
+
+              .message-input {
+                width: calc(100% - 5px);
+              }
+            }
+          }
+        }
+
+        ~.meetzy-main {
+          .messages {
+            .contact-details {
+              width: 68vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .section-py-space {
+      .footer-title {
+        .according-menu {
+          &:before {
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    .landing-header {
+      &.fixed {
+        right: unset;
+      }
+    }
+  }
+
+  .error-main {
+    .error-contain {
+      .animated-bg {
+        i {
+          height: 70px;
+          width: 70px;
+        }
+      }
+    }
+  }
+
+  // element page
+  .img-10 {
+    width: 4px !important;
+  }
+
+  .img-20 {
+    width: 8px !important;
+  }
+
+  .img-30 {
+    width: 10px !important;
+  }
+
+  .img-40 {
+    width: 13px !important;
+  }
+
+  .img-50 {
+    width: 20px !important;
+  }
+
+  .img-60 {
+    width: 30px !important;
+  }
+
+  .img-70 {
+    width: 40px !important;
+  }
+
+  .img-80 {
+    width: 50px !important;
+  }
+
+  .img-90 {
+    width: 60px !important;
+  }
+
+  .img-100 {
+    width: 70px !important;
+  }
+
+  // vido call lable //
+  .viddiolog {
+    &.modal {
+      &.fade {
+        .modal-dialog {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  // to do modal //
+
+  .create-todo-main-modal {
+    .modal-body {
+      .default-form {
+        .dropdown.currency {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .todo-main-modal {
+    .modal-body {
+      .dropdown.currency {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        ul {
+          li {
+            padding: 0px 2px;
+
+            &.volume-icons {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .videocall {
+    &.call-modal {
+      .videocall-details {
+        padding: 15px;
+
+        .usersprof {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .audiocall2 {
+    &.call-modal {
+      ul {
+        li {
+          +li {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  // header
+  header {
+    .landing-header {
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            margin-left: 20px;
+          }
+        }
+
+        ul {
+          li {
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //voice call modal //
+  .audiocall1,
+  .audiocall2,
+  .videocall,
+  .videocallhang,
+  .conferencecall {
+
+    &.call-modal,
+    &.call-modal,
+    &.call-modal,
+    &.call-modal,
+    &.call-modal {
+      min-height: 400px;
+    }
+  }
+
+  .reminder-modal-main {
+    .modal-content {
+      .modal-body {
+        .form-group {
+          .custom-remider-main {
+            .custom-remider-content {
+              .custom-reminder-inline {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      width: 100% !important;
+
+      .recent-default {
+        width: 100% !important;
+        min-width: 100% !important;
+
+        .recent {
+          width: 100% !important;
+        }
+      }
+
+      .logout-btn {
+        min-width: 100% !important;
+      }
+
+      .favorite-tab,
+      .document-tab,
+      .contact-list-tab,
+      .notification-tab,
+      .settings-tab,
+      .recent-default,
+      .status-tab {
+        width: 100% !important;
+        min-width: 100% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .msg-box {
+    >li {
+      &.gallery-img {
+        width: 154px;
+      }
+    }
+  }
+
+  .videocall {
+    &.call-modal {
+      .videocall-details {
+        #basicUsage {
+          display: none;
+        }
+
+        .zoomcontent {
+          display: none;
+        }
+
+        .dot-btn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .audiocall2 {
+    &.call-modal {
+      ul {
+        li {
+          +li {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .clfooter {
+    ul {
+      li {
+        &:first-child {
+          display: none;
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /**No inaternet responsive query**/
+  .connection-img {
+    img {
+      width: 95%;
+      top: 16%;
+    }
+  }
+
+  .animated-bg {
+    display: none;
+  }
+
+  // footer
+  footer {
+    .downlaod {
+      .footer-btn {
+        .btn {
+          margin-top: 15px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .subscribe-content {
+    .form-inline {
+      .form-control {
+        &:first-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  // element page
+  .img-10 {
+    width: 2px !important;
+  }
+
+  .img-20 {
+    width: 4px !important;
+  }
+
+  .img-30 {
+    width: 5px !important;
+  }
+
+  .img-40 {
+    width: 7px !important;
+  }
+
+  .img-50 {
+    width: 9px !important;
+  }
+
+  .img-60 {
+    width: 15px !important;
+  }
+
+  .img-70 {
+    width: 25px !important;
+  }
+
+  .img-80 {
+    width: 35px !important;
+  }
+
+  .img-90 {
+    width: 45px !important;
+  }
+
+  .img-100 {
+    width: 55px !important;
+  }
+
+  .nav-tabs {
+    .nav-item {
+      margin-right: 5px;
+    }
+  }
+
+  .template-tab {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          min-width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .audiocall2 {
+    &.call-modal {
+      ul {
+        li {
+          +li {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  //login page
+  .login-content {
+    .line {
+      h6 {
+        &::before {
+          width: 2.5rem;
+        }
+
+        &::after {
+          width: 2.5rem;
+        }
+      }
+    }
+  }
+
+  // footer
+  .breadcrumb-main {
+    ul {
+      li+li {
+        margin-left: 10px;
+
+        &:before {
+          left: -8px;
+        }
+      }
+    }
+  }
+
+  // elementpage
+  .element-card {
+    .element-card-body {
+      padding: 0.75rem 0.25rem;
+    }
+  }
+}

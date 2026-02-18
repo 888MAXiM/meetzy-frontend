@@ -1,0 +1,111 @@
+@use './../utils/variables' as *;
+.template-tab {
+  .nav-tabs {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-item {
+      // width: 100%;
+      .nav-link {
+        font-size: 13px;
+        font-weight: 700;
+        padding: 5px 12px;
+        border-radius: 10px;
+        background-color: $light-color;
+        border: none !important;
+        color: rgba(var(--dark-color), 0.8) !important;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 100%;
+        justify-content: center;
+        text-wrap: nowrap;
+
+        &.active {
+          background-color: rgba(var(--primary-color), 1) !important;
+          color: $white !important;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  &.chat-tabs {
+    #myTab1 {
+      .nav-tabs {
+        justify-content: center;
+
+        .nav-link {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  &.tab-sm {
+    > .nav-tabs {
+      > .nav-item {
+        .nav-link {
+          border-radius: 25px;
+          padding: 8px 12px;
+          font-size: calc(13px + (13 - 13) * ((100vw - 320px) / (1920 - 320)));
+          line-height: 1.2;
+          min-width: unset;
+          color: rgba(var(--dark-color), 1);
+          background-color: $light-color;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          svg {
+            height: 16px;
+            width: 16px;
+            fill: rgba(var(--dark-color), 0.8) !important;
+            transition: all 0.3s ease;
+            stroke-width: 1px;
+          }
+
+          &.active {
+            color: $white !important;
+            background-color: rgba(var(--primary-color), 1) !important;
+            transition: all 0.3s ease;
+            box-shadow: -1px 10px 16px -10px rgba(var(--primary-color), 1);
+
+            svg {
+              fill: $white !important;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.tab-icon {
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          padding: 7px 22px;
+          min-width: auto;
+          display: flex;
+          font-size: 13px;
+          line-height: 1;
+
+          svg {
+            height: 14px;
+            width: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-card {
+  text-align: center;
+
+  + .tab-card {
+    margin-top: 15px;
+  }
+}

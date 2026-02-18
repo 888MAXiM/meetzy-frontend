@@ -1,0 +1,80 @@
+:root {
+  --primary-color: 37, 118, 123;
+  --primary-light: 225, 243, 244;
+  --success-color: 63, 204, 53;
+  --danger-color: 226, 54, 37;
+  --warning-color: 255, 197, 20;
+  --light-color: 238, 240, 241;
+  --gray1: 218, 246, 245;
+  --dark: 2, 22, 23;
+  --dark-color: 44, 44, 44;
+  --light: 5, 50, 53;
+  --light-dark: 4, 32, 34;
+  --white: 255, 255 , 255;
+}
+.dark {
+  --dark-color: 230, 230, 230;
+}
+//colors
+$black: #000000;
+$white: #ffffff;
+$primary-color: #25767B;
+$primary-light: #e1f3f4;
+$success-color: #3fcc35;
+$danger-color: #e23625;
+$warning-color: #ffc514;
+$light-color: #eff1f2;
+$dark-color: #2c2c2c;
+$dark-icon: #010d21;
+$white-color: #ffffff;
+$gray: #828282;
+$gray2: #f4f5f5;
+$pinked-color: #f98bae;
+$info-color: #447ced;
+$light-primary: #08cfa4;
+$light-font: #999999;
+$facebook: #3b5998;
+$instagram: #e4405f;
+$twiter: #55acee;
+$google: #dc4e41;
+$linkedin: #0e76a8;
+
+$slack: #3aaf85;
+$dark-border: #414248;
+$border-color2: #ddd;
+
+// Font family
+$font-1: 'Manrope', sans-serif;
+$font-inter: 'Inter', sans-serif;
+$landing-cursive: 'Caveat', cursive;
+$icon-stroke-width: 3px;
+$border-color: rgba(127, 131, 132, 0.15);
+$border-color1: #e5e8e9;
+$muted-font: #7f8384;
+$radius100: 100%;
+$btn-radius: 10px;
+$radius25: 25px;
+$radius5: 5px;
+$radius15: 15px;
+$radius20: 20px;
+$radius50: 50%;
+
+//Grid setting
+$main-nav-width: 100px;
+$left-sidebar-width: calc(290px + (370 - 290) * ((100vw - 320px) / (1920 - 320)));
+$right-sidebar-width: calc(250px + (310 - 250) * ((100vw - 320px) / (1920 - 320)));
+
+// sibar seting
+$sidebar-spacing: 15px;
+$contant-spacing: 45px;
+$left-sidebar-spacing: 15px;
+
+// landing page
+$header-back: #d5eee9;
+$red: #ff3030;
+$light-blue: #1c77ed;
+$light-blue1: #1da8fd;
+$black1: #595959;
+$test-back: #e9f5ff;
+$transitionDefault: 0.25s ease-out 0.1s;
+$value: 5px;

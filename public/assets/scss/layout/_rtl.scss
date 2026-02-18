@@ -1,0 +1,2931 @@
+@use './../utils/variables' as *;
+.rtl {
+  direction: rtl;
+
+  .header-icon {
+    &::before {
+      right: 0;
+      left: unset;
+    }
+
+    &:after {
+      right: 0;
+      left: unset;
+    }
+  }
+  .document-list {
+    li {
+      h6 {
+        margin-right: 25px;
+        margin-left: unset;
+      }
+    }
+  }
+  .chat-friend-toggle {
+    .chat-friend-content {
+      left: 0;
+      right: unset;
+      text-align: right;
+    }
+  }
+  .meetzy-main .messages .contact-details .search-form::before{
+    right: 23px;
+    left: unset;
+  }
+  .meetzy-main .messages .contact-details .search-form .close-search{
+    left: 25px;
+    right: unset;
+  }
+  .sidebar-toggle {
+    .main-nav {
+      transform: translateX(100px);
+      li {
+        transform: translateX(100px);
+      }
+      &.on {
+        transform: translateX(0);
+        // transition: none;
+        li {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  .ms-2 {
+    margin-left: unset;
+    margin-right: 8px;
+  }
+
+  .meetzy-right-sidebar {
+    .status.other {
+      h6 {
+        a {
+          svg {
+            margin-left: 6px;
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial-main {
+    .swiper {
+      direction: ltr;
+    }
+  }
+
+  .counter-slider {
+    .swiper {
+      direction: ltr;
+    }
+  }
+
+  .breadcrumb-main {
+    ol {
+      li {
+        + li {
+          margin-left: unset;
+          margin-right: 30px;
+
+          &::before {
+            left: unset;
+            right: -20px;
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .status-tab {
+        .contact-status-box {
+          .accordion {
+            .accordion-item {
+              .accordion-button {
+                &:after {
+                  float: left;
+                  margin-left: unset;
+                  margin-right: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-sidebar {
+    &.active {
+      .apps {
+        .apps-ul {
+          .file-tab {
+            #tab3 {
+              .chat-box {
+                .d-flex {
+                  .flex-grow-1 {
+                    .icon-btn.btn-outline-light {
+                      left: 0 !important;
+                      right: unset !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-sidebar {
+    .apps-ul > li {
+      .reminder-main {
+        .reminder-list {
+          .target-reminder-list {
+            .reminder-disp {
+              .reminder-toggle {
+                left: 0 !important;
+                right: unset !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .create-todo-main-modal {
+    .todo-task {
+      .todo-main-content {
+        .form-group {
+          input + input {
+            padding-left: unset;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-right-sidebar {
+    .contact-profile-img {
+      .profile {
+        .icon-btn {
+          left: 24px;
+          right: unset;
+        }
+
+        .profile-content {
+          right: 20px;
+          left: unset;
+        }
+      }
+    }
+  }
+
+  .chat-main {
+    li {
+      .chat-box {
+        .icon-btn {
+          &.btn-outline-light {
+            &:last-child {
+              left: 0px;
+              right: unset !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-chat-content {
+    h5 {
+      padding: 20px 30px 20px 0px;
+    }
+  }
+
+  .introjs-tooltipReferenceLayer .introjs-tooltip {
+    right: 70px !important;
+  }
+
+  .introjs-tooltip .introjs-bullets {
+    text-align: right;
+  }
+
+  .introjs-tooltip .introjs-tooltipbuttons {
+    text-align: right;
+  }
+
+  .introjs-tooltip .introjs-button.introjs-prevbutton {
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  .introjs-tooltip .introjs-button.introjs-nextbutton {
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .introjs-skipbutton {
+    margin-left: 5px;
+    margin-right: unset;
+  }
+
+  .add-contact-modal {
+    .modal-dialog {
+      &:before {
+        right: 13px;
+        left: unset;
+      }
+    }
+  }
+
+  .fev-addcall-main {
+    .modal-dialog {
+      &:before {
+        right: 13px;
+        left: unset;
+      }
+    }
+  }
+
+  .add-contact-modal {
+    .modal-dialog {
+      margin-left: unset;
+      margin-right: 415px;
+    }
+  }
+
+  .modal-footer > :not(:first-child) {
+    margin-left: 0.25rem;
+    margin-right: unset;
+  }
+
+  .add-popup {
+    .close {
+      left: 24px;
+      right: unset;
+
+      span {
+        left: 20px;
+        right: unset;
+      }
+    }
+  }
+
+  .todo-main-modal {
+    .todo-task {
+      .todo-main-content {
+        .form-group {
+          padding-left: unset;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+
+  .player-box {
+    direction: ltr;
+  }
+
+  .rhap_time {
+    color: rgba($white, 0.8);
+  }
+
+  .form-label {
+    color: rgba($white, 0.8);
+  }
+
+  .app-sidebar {
+    .apps-ul {
+      > li {
+        .todo-main {
+          .todo-main-content {
+            .datepicker-here {
+              right: unset;
+              left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-container .meetzy-left-sidebar .recent-default .chat > .template-tab.chat-tabs > ul > li > a svg {
+    margin-right: unset;
+    margin-left: 5px;
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      .dropdown-divider {
+        h5 {
+          margin-right: 10px;
+          margin-left: unset;
+        }
+      }
+    }
+  }
+
+  .meetzy-left-sidebar {
+    .favorite-tab,
+    .document-tab,
+    .contact-list-tab,
+    .notification-tab,
+    .settings-tab,
+    .recent-default,
+    .status-tab {
+      position: absolute;
+      min-height: calc(100vh);
+      overflow: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
+      top: 0;
+      bottom: 0;
+      background-color: $white;
+      z-index: 0;
+
+      &.active {
+        opacity: 1;
+        z-index: 3;
+        animation: fadeInLeft 300ms ease-in-out;
+      }
+
+      .my-status-box {
+        .status-content {
+          .d-flex {
+            .img-status {
+              .bg-size {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+              }
+
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+              }
+
+              .upload-img {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                background-color: rgba(var(--primary-color), 1);
+                position: absolute;
+                bottom: -8px;
+                right: 0;
+                color: $white;
+
+                input {
+                  background-color: gray;
+                  border-radius: 50%;
+                  width: 100%;
+                  height: 100%;
+                  opacity: 0;
+                  position: absolute;
+                  top: 0;
+                }
+              }
+            }
+
+            .flex-grow-1 {
+              h3 {
+                text-transform: capitalize;
+                margin-bottom: 5px;
+              }
+
+              p {
+                margin-bottom: 0;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+
+      .contact-status-box {
+        padding-top: 20px;
+
+        h3 {
+          padding: 15px 25px;
+          color: rgba(var(--primary-color), 1);
+          background-color: rgba(var(--primary-color), 0.1);
+          text-transform: capitalize;
+          margin-bottom: 20px;
+          border-radius: 15px;
+        }
+
+        .status-content {
+          margin-bottom: 20px;
+          border-bottom: 1px solid $border-color;
+          padding-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          ul {
+            display: flex;
+            align-items: center;
+
+            li {
+              h5 {
+                margin-bottom: 5px;
+                text-transform: capitalize;
+              }
+
+              .img-status {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                position: relative;
+              }
+
+              p {
+                margin-bottom: 0;
+                text-transform: capitalize;
+              }
+
+              &:first-child {
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .recent-default {
+      position: relative;
+      z-index: 0;
+      padding: 0 !important;
+
+      &.active {
+        z-index: 999;
+      }
+
+      .recent {
+        position: fixed;
+        top: 0;
+        background-color: $white;
+        z-index: 1;
+
+        .recent-slider {
+          .recent-box {
+            &:hover {
+              .recent-profile {
+                box-shadow: -1px 10px 16px -10px rgba(102, 102, 102, 1);
+                transition: all 0.3s ease;
+              }
+            }
+
+            .dot-btn {
+              position: absolute;
+              bottom: 25px;
+              right: 15px;
+            }
+
+            &:before {
+              top: -2px;
+              left: 0px;
+            }
+          }
+        }
+      }
+
+      .chat {
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        > .template-tab {
+          &.tab-sm {
+            &.tab-radius {
+              .nav-tabs {
+                width: 80%;
+                margin: 0 auto;
+
+                > .nav-item .nav-link {
+                  border-radius: $radius5;
+                }
+              }
+            }
+          }
+        }
+
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .downlaod {
+    .footer-btn {
+      .btn:first-child {
+        margin-right: unset;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .videocall {
+    &.call-modal {
+      .videocall-details {
+        .zoomcontent {
+          left: 30px;
+          right: unset;
+        }
+      }
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .contact-list-tab {
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .settings-tab {
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .favorite-tab {
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .document-tab {
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .notification-tab {
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .template-according {
+    .card {
+      .card-header {
+        a {
+          padding-right: 28px;
+          padding-left: unset;
+        }
+
+        i {
+          right: 5px;
+          left: unset;
+        }
+      }
+    }
+  }
+  .contact-chat > ul .datesection > li.replies {
+    margin-right: auto;
+    margin-left: unset; 
+  }
+  .emojis-main {
+    .emojis-contain {
+      right: 0;
+      left: unset;
+    }
+
+    .sticker-contain {
+      right: 0;
+      left: unset;
+    }
+
+    .contact-poll {
+      .contact-poll-content {
+        right: -25px;
+        left: unset;
+
+        ul {
+          li {
+            padding-right: 30px;
+            padding-left: unset;
+
+            a {
+              svg {
+                margin-left: 15px;
+                margin-right: unset;
+                right: 0;
+                left: unset;
+              }
+            }
+          }
+        }
+
+        &:before {
+          right: 40px;
+          left: unset;
+        }
+      }
+    }
+  }
+
+  .search-form {
+    &:before {
+      right: 10px;
+      left: unset;
+    }
+
+    .form-group {
+      .icon-close {
+        left: 8px;
+        right: unset;
+      }
+    }
+  }
+
+  .app-sidebar {
+    &.active {
+      left: 0;
+      right: unset;
+    }
+
+    .apps-ul {
+      > li {
+        &.active {
+          left: 100px !important;
+          right: unset !important;
+        }
+
+        .todo-main {
+          .todo-tab {
+            > .nav-tabs {
+              li {
+                &:last-child {
+                  left: 0;
+                  right: unset;
+                }
+              }
+            }
+          }
+
+          .todo-main-content {
+            input + input {
+              margin-right: 10px;
+              margin-left: unset;
+            }
+
+            .drop-picker {
+              margin-right: 10px;
+              margin-left: unset;
+            }
+          }
+
+          .tab-content {
+            .todo-task {
+              span {
+                margin-right: unset;
+              }
+
+              .todo-buttons {
+                a {
+                  &:nth-child(2) {
+                    margin-right: 20px;
+                  }
+                }
+
+                span {
+                  margin-left: 0 !important;
+                }
+              }
+            }
+          }
+        }
+
+        .template-tab {
+          ul {
+            li + li {
+              margin-right: 15px;
+              margin-left: unset;
+            }
+          }
+        }
+
+        .file-tab {
+          .tab-content {
+            .link-group {
+              .d-flex {
+                svg {
+                  margin-left: 7px;
+                  margin-right: unset;
+                }
+              }
+
+              img {
+                margin-left: 10px;
+                margin-right: unset;
+              }
+            }
+
+            ul {
+              &.chat-main {
+                li {
+                  .chat-box {
+                    .details {
+                      padding-right: 55px;
+                      padding-left: unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .notes-main {
+          .notes-content {
+            ul {
+              li {
+                margin-right: 15px;
+                margin-left: unset;
+              }
+            }
+          }
+        }
+
+        .reminder-main {
+          .reminder-list-disp {
+            .reminder-disp {
+              .reminder-list-toggle {
+                left: 0;
+                right: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text-left {
+    text-align: right !important;
+  }
+
+  .snippet-modal-main {
+    .modal-content {
+      .snippet-btn {
+        .btn-light {
+          margin-left: 15px;
+          margin-right: unset;
+        }
+      }
+    }
+  }
+
+  .pol-modal-main {
+    .modal-content {
+      .modal-body {
+        .form-group {
+          .post-poll {
+            ul {
+              li {
+                p {
+                  margin-right: 15px;
+                  margin-left: unset;
+                }
+              }
+            }
+          }
+
+          .allow-group {
+            .allow-check {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reminder-modal-main {
+    .modal-content {
+      .modal-body {
+        .form-group {
+          ul {
+            &.reminder-count {
+              li + li {
+                margin-right: 15px;
+                margin-left: unset;
+              }
+            }
+          }
+
+          .custom-remider-main {
+            .custom-remider-content {
+              .custom-reminder-inline {
+                input {
+                  &:first-child {
+                    margin-left: 30px;
+                    margin-right: unset;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .msg-setting-main {
+    .msg-dropdown-main {
+      .msg-dropdown {
+        right: 0;
+        left: unset;
+      }
+    }
+  }
+
+  .recent-slider {
+    direction: ltr;
+  }
+
+  .mr-3 {
+    margin-left: 1rem !important;
+    margin-right: unset !important;
+  }
+
+  .meetzy-main {
+    .messages {
+      .calls {
+        > li {
+          &:last-child {
+            margin-left: 0;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-chat {
+    > ul {
+      > li {
+        &.sent {
+          .contact-name {
+            .msg-box {
+              .msg-setting-main {
+                .badge {
+                  &.badge-img {
+                    right: 12px;
+                    left: unset;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .messages {
+      .contact-details {
+        .left {
+          &.d-flex {
+            .flex-grow-1 {
+              margin-right: unset;
+              margin-left: 10px;
+
+              &::before {
+                left: 0;
+                right: unset;
+              }
+            }
+          }
+        }
+      }
+
+      .calls {
+        > li {
+          &:after {
+            left: 0;
+            right: unset;
+          }
+        }
+      }
+    }
+
+    .call-content {
+      .call-log-main {
+        .coll-log-group {
+          .log-content-left {
+            .d-fle {
+              svg {
+                margin-right: 0;
+                margin-left: 10px;
+                transform: scaleX(-1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .meetzy-contain {
+      ul {
+        &.detial-price {
+          li {
+            i {
+              margin-left: 20px;
+              margin-right: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-chat {
+    > ul {
+      > li {
+        &.replies {
+          margin-left: unset;
+          margin-right: auto;
+          text-align: left;
+
+          .d-fle {
+            .profile {
+              margin-left: 0 !important;
+              margin-right: 1.5rem !important;
+            }
+          }
+
+          .msg-box {
+            li {
+              &:last-child {
+                margin-right: auto;
+                margin-left: unset;
+
+                h5 {
+                  border-radius: 12px 12px 12px 0;
+                }
+              }
+
+              .badge {
+                margin-left: 0.5rem !important;
+                margin-right: 0 !important;
+              }
+
+              &:first-child {
+                h5 {
+                  border-radius: 12px;
+                }
+              }
+            }
+          }
+
+          .msg-setting-main {
+            .msg-dropdown-main {
+              .msg-setting {
+                margin-right: unset;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mr-4 {
+    margin-right: 0 !important;
+    margin-left: 1.5rem !important;
+  }
+
+  .msg-setting-main {
+    .msg-dropdown-main {
+      .msg-setting {
+        margin-left: unset;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .ml-2 {
+    margin-left: 0 !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .msg-box {
+    > li {
+      &:first-child {
+        h5 {
+          border-radius: 12px;
+        }
+      }
+
+      &:last-child {
+        h5 {
+          border-radius: 20px 20px 0px 20px;
+        }
+      }
+
+      &:last-child {
+        .document {
+          border-radius: 12px 12px 12px 0;
+        }
+      }
+    }
+  }
+
+  .msg-box > li.gallery-img {
+    border-radius: 12px 12px 0px 12px;
+  }
+
+  .pull-right {
+    float: left;
+  }
+
+  .text-right {
+    text-align: left !important;
+  }
+
+  .m-r-5 {
+    margin-right: unset;
+    margin-left: 5px;
+  }
+
+  .dropdown {
+    .currency {
+      text-align: center;
+    }
+  }
+
+  .app-list-ul {
+    li {
+      &.right-sidebar-profile {
+        .profile {
+          margin: 0 auto !important;
+        }
+      }
+    }
+  }
+
+  .chat-main {
+    li {
+      .chat-box {
+        .date-status {
+          right: unset;
+          left: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .me-2 {
+    margin-left: 8px;
+  }
+
+  .dynamic-sidebar {
+    .chat-main {
+      .flex-grow-1 {
+        left: 0;
+        right: unset;
+      }
+    }
+  }
+
+  .app-sidebar {
+    .apps-ul {
+      > li {
+        .file-tab {
+          .tab-content {
+            .link-group {
+              .d-flex:nth-last-child(1) {
+                padding-right: 15px;
+                border-left: unset;
+                border-right: 4px solid rgba(var(--primary-color), 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .call-log-main {
+    .call-box {
+      .call-status {
+        left: 0;
+        right: unset;
+      }
+    }
+  }
+
+  .contact-log-main {
+    li {
+      .contact-box {
+        .profile {
+          right: 0;
+          left: unset;
+        }
+
+        .contact-action {
+          left: -12px;
+          right: unset;
+
+          .icon-btn + .icon-btn {
+            margin-right: 5px;
+            margin-left: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .profile {
+    &.offline {
+      &:before {
+        left: 0;
+        right: unset;
+      }
+    }
+
+    &.online {
+      &:before {
+        left: 0;
+        right: unset;
+      }
+    }
+
+    &.unreachable {
+      &:before {
+        left: 0;
+        right: unset;
+      }
+    }
+
+    &.busy {
+      &:before {
+        left: 0;
+        right: unset;
+      }
+    }
+  }
+
+  .msg-box {
+    > li {
+      .refresh-block {
+        div {
+          margin-right: 10px !important;
+          margin-left: unset !important;
+        }
+      }
+    }
+  }
+
+  .privacy {
+    h5 {
+      padding-left: 35px;
+      padding-right: unset;
+    }
+  }
+
+  .template-according {
+    .card {
+      .collapse {
+        .input-group {
+          .form-control {
+            border-radius: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-chat {
+    > ul {
+      > li {
+        &.replies {
+          .d-flex {
+            .profile {
+              margin-right: 1.5rem !important;
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .chat-main {
+    li {
+      .chat-box {
+        .icon-btn {
+          &.btn-outline-light {
+            left: 0;
+            right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .contact-content {
+      .contact-sub-content {
+        .personal-info-group {
+          ul {
+            &.basic-info {
+              li {
+                h5 {
+                  &.details {
+                    float: left;
+                  }
+                }
+              }
+
+              &.edu {
+                li {
+                  .d-fle {
+                    img {
+                      margin-left: 10px;
+                      margin-right: unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .group-main {
+    .group-box {
+      .date-status {
+        right: unset;
+        left: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  .groupuser {
+    margin-right: auto;
+    margin-left: unset;
+    text-align: left;
+
+    .gr-chat-friend-toggle {
+      padding-left: 20px;
+      padding-right: unset;
+
+      .gr-chat-friend-content {
+        left: 0;
+        right: unset;
+        text-align: right;
+
+        .chat-main {
+          li {
+            .chat-box {
+              .details {
+                padding-right: 60px;
+                padding-left: 50px;
+              }
+            }
+          }
+        }
+
+        &:before {
+          left: 40px;
+          right: unset;
+        }
+      }
+    }
+
+    .gr-profile {
+      &.grow {
+        &:after {
+          left: -4.2px;
+          right: unset;
+        }
+      }
+    }
+  }
+
+  [class^='icon-'].pull-right,
+  [class*=' icon-'].pull-right {
+    margin-right: 0.3em;
+    margin-left: unset;
+  }
+
+  .groupuser .gr-profile + .gr-profile {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  .dot-btn {
+    &:before {
+      right: unset;
+      left: 1px;
+    }
+
+    &:after {
+      left: -4.2px;
+      right: unset;
+    }
+  }
+
+  .meetzy-container {
+    .meetzy-left-sidebar {
+      .status-tab {
+        .my-status-box {
+          .status-content {
+            .d-fle {
+              .img-status {
+                margin-left: 15px;
+                margin-right: unset;
+
+                .upload-img {
+                  left: 0;
+                  right: unset;
+                }
+              }
+            }
+          }
+        }
+
+        .contact-status-box {
+          .status-content {
+            ul {
+              li {
+                &:first-child {
+                  margin-left: 15px;
+                  margin-right: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .recent-default {
+        .recent {
+          .recent-slider {
+            .recent-box {
+              .dot-btn {
+                left: 15px;
+                right: unset;
+              }
+
+              .recent-profile {
+                h6 {
+                  right: 15px;
+                  left: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .meetzy-right-sidebar {
+      left: 0px;
+      right: unset;
+    }
+  }
+
+  .app-sidebar {
+    &.active {
+      .apps-ul {
+        .template-title {
+          .d-flex {
+            .flex-grow-1 {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-main {
+    .call-content {
+      .call-log-main {
+        .coll-log-group {
+          .log-content-left {
+            .d-flex {
+              svg {
+                margin-left: 10px;
+                margin-right: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .meetzy-right-sidebar {
+    .contact-profile {
+      .template-title {
+        .d-flex {
+          .flex-grow-1 {
+            text-align: left;
+          }
+        }
+      }
+
+      .details {
+        ul {
+          li {
+            + li {
+              margin-right: 12px;
+              margin-left: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .profile-box {
+    .details {
+      padding-right: 0px;
+    }
+  }
+
+  .integratin {
+    li {
+      .d-flex {
+        .media-right {
+          .profile {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .privacy {
+    .switchery-small {
+      left: 0;
+      right: unset;
+      transform: scale(-1);
+    }
+  }
+  .modal-header .btn-close{
+    margin-left: unset;
+    margin-right: auto;
+  }
+  .message-reactions-modal .modal-body .reaction-row .reaction-emoji{
+    right: 25px;
+    left: unset;
+  }
+  .msg-setting-main:has(.emoji) .emoji{
+    right: 12px;
+    left: unset;
+  }
+  .sent .msg-setting-main:has(.emoji) .emoji{
+    right: unset;
+    left: 12px;
+  }
+  .change-number {
+    span {
+      border-left: none;
+    }
+
+    .country-code {
+      border-right: none;
+      padding-right: 3px;
+    }
+  }
+
+  // index page scss
+  .index-main {
+    .landing-page-header {
+      .home-content {
+        .downlaod {
+          .footer-btn {
+            a {
+              &:first-child {
+                margin-left: 6px;
+                margin-right: 0;
+              }
+
+              &:last-child {
+                margin-left: 0;
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+
+        > div {
+          .button-doc {
+            svg {
+              margin-left: 6px;
+              margin-right: unset;
+            }
+          }
+        }
+      }
+    }
+
+    .client-images {
+      img {
+        animation: slide-left-reverse 50s linear infinite !important;
+      }
+    }
+  }
+
+  header {
+    .landing-header {
+      .navbar-toggler {
+        left: 20px;
+        right: unset;
+      }
+    }
+  }
+
+  .landing-footer {
+    .feature-content {
+      ul {
+        li:after {
+          left: -14%;
+          right: unset;
+        }
+      }
+    }
+
+    .footer {
+      .links {
+        li {
+          a:before {
+            right: 0;
+            left: unset;
+          }
+
+          &:hover {
+            a:before {
+              right: 3px;
+              left: unset;
+            }
+          }
+        }
+      }
+
+      h3 {
+        &::after {
+          right: 0;
+          left: unset;
+        }
+      }
+    }
+  }
+
+  .downlaod {
+    .footer-btn {
+      .btn {
+        div {
+          padding-right: 12px;
+          padding-left: unset;
+        }
+      }
+    }
+  }
+
+  .index-main > .team-work-main .team-work-content .ply-main::before {
+    background-image: linear-gradient(to right, rgba(1, 30, 48, 0), #011e30);
+    right: 17%;
+  }
+
+  .secure-app-main .secure-app-content .ply-main::after {
+    background-image: linear-gradient(to right, rgba(1, 30, 48, 0), #011e30);
+    right: 40%;
+  }
+
+  // landing.html page
+  .slider-block {
+    background-position: unset;
+    transform: scaleX(-1) scaleY(1);
+
+    .slider-main {
+      transform: scaleX(-1) scaleY(1);
+    }
+  }
+
+  .ml-3 {
+    margin-right: 1rem !important;
+  }
+
+  .app-design-main {
+    .app-hover {
+      right: 27%;
+    }
+  }
+
+  .team-work-main {
+    .team-work-content {
+      .ply-main {
+        .ply-content {
+          margin-left: 20px;
+          margin-right: unset;
+        }
+      }
+    }
+
+    .team2 {
+      left: 28%;
+      right: unset;
+    }
+
+    .team4 {
+      left: 9%;
+      right: unset;
+    }
+  }
+
+  .collaboration-main {
+    .collaboration-content {
+      ul {
+        &.collab-tab {
+          &.nav {
+            &.nav-pills {
+              li {
+                &.nav-item {
+                  margin-left: 75px;
+                  margin-right: unset;
+
+                  a {
+                    &.nav-link {
+                      .tab-main {
+                        .tab-img {
+                          margin-left: 20px;
+                          margin-right: unset;
+                        }
+
+                        .tab-content {
+                          h3 {
+                            text-align: right;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial-slider {
+    direction: ltr;
+  }
+
+  .secure-app-main {
+    .secure-app-content {
+      .ply-main {
+        .ply-content {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .price-slider {
+    direction: ltr;
+  }
+
+  .subscribe-content {
+    .form-inline {
+      .form-control {
+        &:first-child {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    button {
+      margin-right: 20px;
+    }
+  }
+
+  .fa-volume-up,
+  .feather-phone,
+  .feather-video,
+  .feather-rotate-cw,
+  .feather-chevron-right,
+  .feather-chevron-left,
+  .feather-send {
+    transform: scaleX(-1);
+  }
+
+  .audiocall1,
+  .audiocall2,
+  .videocall,
+  .videocallhang,
+  .conferencecall {
+    &.call-modal {
+      ul {
+        li + li {
+          margin-right: 45px;
+          margin-left: unset;
+        }
+      }
+    }
+  }
+
+  .videocall,
+  .videocallhang {
+    &.call-modal {
+      .videocall-details {
+        #basicUsage {
+          margin-left: 48px;
+          margin-right: unset;
+        }
+
+        .usersprof {
+          margin-left: 15px;
+          margin-right: unset;
+        }
+      }
+
+      .small-image {
+        right: 40px;
+        left: unset;
+      }
+    }
+  }
+
+  .meetzy-main .messages .contact-details .left.d-flex .media-right .mute i:after {
+    top: 8px;
+    left: -1px;
+  }
+
+  .navbar-brand {
+    margin-left: 1rem;
+    margin-right: unset;
+  }
+
+  header {
+    .landing-header {
+      .landing-header-right {
+        .purchase-block {
+          .purchase-btn {
+            i {
+              margin-left: 20px;
+              margin-right: unset;
+            }
+          }
+        }
+      }
+
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            margin-right: 25px;
+            margin-left: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    left: unset;
+    float: right;
+    text-align: right;
+  }
+
+  .breadcrumb-main {
+    .breadcrumb-content {
+      .breadcrumb-right {
+        ul {
+          li {
+            margin-left: 15px;
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  // background-image
+  .page-decore {
+    .top {
+      left: -30px;
+      right: unset;
+      transform: rotate(-130deg);
+    }
+
+    .bottom {
+      right: -20px;
+      left: unset;
+      transform: rotate(45deg);
+    }
+  }
+
+  // about.html page
+  .about-page {
+    .about-tab {
+      .nav {
+        border-left: 1px solid #eff1f2;
+        border-right: unset;
+      }
+    }
+  }
+
+  .secure-app-main {
+    background-position: unset;
+    transform: scaleX(-1) scaleY(1);
+
+    .secure-app-content {
+      transform: scaleX(-1) scaleY(1);
+    }
+  }
+
+  .team-slider {
+    direction: ltr;
+  }
+
+  .team {
+    .owl-nav {
+      left: 0;
+      right: unset;
+    }
+  }
+
+  .about-page {
+    .offset-sm-2 {
+      margin-right: 16.66667%;
+    }
+
+    .offset-md-1 {
+      margin-right: 8.33333%;
+    }
+  }
+
+  // landing-page
+  .collapse-block {
+    .block-title {
+      &:after {
+        left: 0;
+        right: unset;
+      }
+    }
+  }
+
+  .template-btn-group {
+    a {
+      &:last-child {
+        &.btn-sm {
+          border-radius: 10px 10px 0 10px;
+        }
+      }
+
+      &:first-child {
+        border-radius: 15px 15px 15px 0;
+      }
+
+      &:last-child {
+        border-radius: 15px 15px 0px 15px;
+      }
+    }
+
+    .btn-group-sm {
+      > a {
+        &.btn {
+          &:last-child {
+            border-radius: 10px 10px 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .template-btn-group {
+    a + a {
+      margin-right: 5px;
+    }
+  }
+
+  .document-list {
+    li {
+      h5 {
+        margin-right: 30px;
+        margin-left: unset;
+      }
+    }
+  }
+
+  .element-card {
+    .typography {
+      .font_label {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .element-card-body {
+    .fonts {
+      .btn-primary {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .downlaod {
+    .footer-btn {
+      .btn {
+        span {
+          padding-right: 12px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .links {
+      li {
+        padding-right: 20px;
+        padding-left: unset;
+
+        &:hover {
+          a {
+            &:before {
+              right: 3;
+              left: unset;
+            }
+          }
+        }
+
+        a {
+          &:before {
+            right: 0;
+            left: unset;
+            transform: scale(-1);
+          }
+        }
+      }
+    }
+
+    .footer-back-block {
+      .inner1 {
+        left: -80px;
+        right: unset;
+        transform: rotate(-96deg);
+      }
+
+      .inner2 {
+        right: -80px;
+        left: unset;
+      }
+    }
+
+    .social-group {
+      li + li {
+        margin-right: 5px;
+        margin-left: unset;
+      }
+    }
+  }
+
+  .breadcrumb-main {
+    ul {
+      li + li {
+        margin-right: 30px;
+        margin-left: unset;
+
+        &:before {
+          right: -15px;
+          left: unset;
+        }
+      }
+    }
+  }
+
+  // login page
+  .login-page2 {
+    .login-content-main {
+      .login-content2 {
+        .template-tab {
+          .nav-tabs {
+            li + li {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+
+      .medialogo {
+        right: -4%;
+        left: unset;
+
+        li + li {
+          margin-left: 15px;
+          margin-right: unset;
+        }
+      }
+    }
+  }
+
+  .login-page1 {
+    .right-page {
+      left: 0;
+      right: unset;
+    }
+  }
+
+  .login-content {
+    .form1 {
+      .form-group {
+        .buttons {
+          .btn-signup {
+            margin-right: 25px;
+            margin-left: unset;
+          }
+        }
+      }
+    }
+
+    .form2 {
+      .form-group {
+        .buttons {
+          .btn-signup {
+            margin-right: 25px;
+            margin-left: unset;
+            padding-right: 1.25rem;
+          }
+        }
+      }
+    }
+
+    .medialogo {
+      ul {
+        li + li {
+          margin-right: 20px;
+          margin-left: unset;
+        }
+      }
+    }
+
+    .termscondition {
+      h4 {
+        span {
+          margin-left: 8px;
+          margin-right: unset;
+        }
+      }
+    }
+  }
+
+  .create-todo-main-modal {
+    .modal-body {
+      .default-form {
+        .form-group {
+          input {
+            margin-right: 10px;
+            margin-left: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .todo-main-modal .todo-task .todo-main-content .form-group input + input {
+    margin-right: 10px;
+    margin-left: unset;
+    padding-left: unset;
+    padding-right: 10px;
+  }
+
+  .app-sidebar {
+    .todo-main {
+      .todo-task {
+        h4 {
+          text-align: right;
+        }
+
+        .todo-list {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .right-login {
+    .login-img {
+      transform: scaleX(-1);
+    }
+
+    .girl-logo {
+      transform: scaleX(-1);
+      left: 27%;
+      right: unset;
+    }
+
+    .boy-logo {
+      transform: scaleX(-1);
+      right: 36%;
+      left: unset;
+    }
+
+    .heart-logo {
+      left: 35%;
+      right: unset;
+    }
+
+    .has-logo {
+      left: 27%;
+      right: unset;
+    }
+
+    .has-logo1 {
+      right: 25%;
+      left: unset;
+      transform: scalex(1);
+    }
+
+    .top-circle {
+      right: 20%;
+      left: unset;
+    }
+
+    .center-circle {
+      right: 6%;
+      left: unset;
+    }
+
+    .bottom-circle {
+      right: 13%;
+      left: unset;
+    }
+
+    .bottom-circle1 {
+      left: 22%;
+      right: unset;
+    }
+
+    .right-circle {
+      left: 0;
+      right: unset;
+    }
+
+    .right-circle1 {
+      left: 9%;
+      right: unset;
+    }
+
+    .cloud-logo3 {
+      animation: homecloud 45s linear infinite;
+    }
+
+    .cloud-logo4 {
+      animation: homecloud 80s linear infinite;
+    }
+
+    .cloud-logo1 {
+      animation: homecloud 25s linear infinite;
+    }
+  }
+
+  .login-page2 {
+    .login-img {
+      transform: scaleX(-1);
+    }
+
+    .girl-logo {
+      transform: scaleX(-1);
+      left: 27%;
+      right: unset;
+    }
+
+    .boy-logo {
+      transform: scaleX(-1);
+      right: 36%;
+      left: unset;
+    }
+
+    .heart-logo {
+      left: 35%;
+      right: unset;
+    }
+
+    .has-logo {
+      left: 27%;
+      right: unset;
+    }
+
+    .has-logo1 {
+      right: 25%;
+      left: unset;
+      transform: scalex(1);
+    }
+
+    .top-circle {
+      right: 20%;
+      left: unset;
+    }
+
+    .center-circle {
+      right: 6%;
+      left: unset;
+    }
+
+    .bottom-circle {
+      right: 13%;
+      left: unset;
+    }
+
+    .bottom-circle1 {
+      left: 22%;
+      right: unset;
+    }
+
+    .right-circle {
+      left: 0;
+      right: unset;
+    }
+
+    .right-circle1 {
+      left: 9%;
+      right: unset;
+    }
+
+    .cloud-logo3 {
+      animation: homecloud 45s linear infinite;
+    }
+
+    .cloud-logo4 {
+      animation: homecloud 80s linear infinite;
+    }
+
+    .cloud-logo1 {
+      animation: homecloud 25s linear infinite;
+    }
+  }
+
+  .owl-carousel {
+    direction: ltr;
+  }
+
+  //  sidebar rtl //
+
+  .meetzy-container {
+    .main-nav {
+      border-left: 1px solid $light-color;
+      border-right: none;
+
+      .logo-wrapper {
+        img {
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+
+  .template-tab.tab-sm > {
+    .nav-tabs > {
+      .nav-item {
+        .nav-link {
+          svg {
+            transform: scaleX(-1);
+          }
+        }
+      }
+    }
+  }
+
+  //sidebar chat rtl //
+
+  .btn-fix {
+    margin-right: -30px;
+    margin-left: unset;
+  }
+
+  .app-sidebar {
+    .app-list {
+      border-right: 2px solid rgba($light-color, 0.4);
+      border-left: none;
+    }
+  }
+
+  .app-list-ul {
+    .apps-toggle {
+      right: -16%;
+    }
+  }
+
+  // app sidebar rtl //
+  .app-sidebar {
+    .apps-ul > {
+      li {
+        .file-tab {
+          .tab-content {
+            margin-left: -20px;
+            padding-left: 20px;
+            margin-right: unset;
+            padding-right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .setting-sidebar {
+    .template-layout {
+      ul {
+        li {
+          margin-left: 10px;
+          margin-right: unset;
+
+          .sidebar {
+            margin-left: 5px;
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .setting-sidebar {
+    .sidebar-setting {
+      ul {
+        li {
+          margin-left: 15px;
+          margin-right: unset;
+
+          .sm-sidebar {
+            margin-left: 3px;
+            margin-right: unset;
+          }
+
+          .sidebar {
+            margin-left: 3px;
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-light {
+    .navbar-brand {
+      margin-right: 16px;
+      margin-left: unset;
+    }
+  }
+
+  .navbar-expand-sm .navbar-nav {
+    margin-right: auto;
+    margin-left: unset;
+  }
+
+  .index-main {
+    .landing-page-header {
+      .home-content {
+        .downlaod {
+          .footer-btn {
+            @media (max-width: 360px) {
+              display: unset !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .groupuser {
+    .gr-chat-friend-toggle {
+      .gr-chat-friend-content {
+        .chat-main li {
+          .chat-box {
+            .icon-btn {
+              right: unset;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // chat-cont setting rtl//
+  ul.chat-cont-setting {
+    left: unset;
+    right: 18%;
+  }
+
+  //setting sidebar //
+  .setting-sidebar {
+    right: unset;
+    left: -365px;
+  }
+
+  //defolt form //
+  .default-form select {
+    background: rgba(var(--gray1), 0.06);
+  }
+
+  // sidebar panel //
+  .sidebar-panel-main {
+    left: 30px;
+    right: unset;
+  }
+
+  // responsive
+  @media (max-width: 1366px) {
+    header {
+      .landing-header {
+        .navbar-collapse {
+          .navbar-nav {
+            margin-left: unset;
+            margin-right: auto;
+          }
+        }
+
+        &.fixed {
+          .navbar-collapse {
+            .navbar-nav {
+              margin-left: unset;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+
+    // footer
+    .social-group {
+      li + li {
+        margin-right: 5px;
+        margin-left: unset;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    // header
+    .inner-page {
+      header {
+        .landing-header {
+          .navbar-toggler {
+            left: 20px;
+            right: unset;
+          }
+        }
+      }
+    }
+
+    header {
+      .landing-header {
+        .navbar-collapse {
+          left: 0;
+          right: unset;
+
+          .navbar-nav {
+            .nav-item {
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    //login
+    .right-login {
+      .login-img {
+        width: 65%;
+      }
+
+      .boy-logo {
+        right: 29%;
+        left: unset;
+        top: 50%;
+      }
+
+      .girl-logo {
+        left: 14%;
+        right: unset;
+        top: 27%;
+      }
+
+      .has-logo1 {
+        right: 12%;
+        left: unset;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    // footer
+    .downlaod {
+      .footer-btn {
+        .btn + .btn {
+          margin-right: 15px;
+          margin-left: unset;
+        }
+      }
+    }
+
+    // login
+    .right-login {
+      .girl-logo {
+        width: 35%;
+        top: 23%;
+        left: 3%;
+        right: unset;
+      }
+    }
+
+    //lognin
+    .right-login {
+      .login-img {
+        width: 80%;
+      }
+
+      .boy-logo {
+        right: 21%;
+        left: unset;
+        top: 50%;
+        width: 25%;
+      }
+
+      .girl-logo {
+        width: 33%;
+        left: 9%;
+        right: unset;
+        top: 25%;
+      }
+
+      .has-logo1 {
+        right: 5%;
+        left: unset;
+        top: 69%;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .sidebar-toggle {
+      .main-nav {
+        &.on {
+          right: 0;
+          left: unset;
+        }
+      }
+    }
+    .meetzy-container {
+      .meetzy-left-sidebar {
+        right: 0;
+        left: unset;
+      }
+    }
+    ul {
+      &.chat-cont-setting {
+        right: unset;
+        left: 2%;
+        bottom: 10%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    // footer
+    .downlaod {
+      .footer-btn {
+        .btn + .btn {
+          margin-right: unset;
+          margin-left: unset;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    // footer
+    footer {
+      .footer-title {
+        .according-menu {
+          &:before {
+            left: 2px;
+            right: unset;
+          }
+        }
+
+        &.active {
+          .according-menu {
+            &:before {
+              left: 2px;
+              right: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .meetzy-main {
+      .messages {
+        .contact-details {
+          padding: 23px 15px 23px 30px !important;
+        }
+      }
+    }
+
+    // footer
+    .downlaod {
+      .footer-btn {
+        display: flex;
+        flex-wrap: wrap;
+
+        .btn + .btn {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    //footer
+    .downlaod {
+      .footer-btn {
+        display: flex;
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .meetzy-container .main-nav.on ~ .meetzy-left-sidebar .dynamic-sidebar:not(.recent-default) {
+      margin-right: 100px;
+      margin-left: unset;
+    }
+
+    .sidebar-toggle .main-nav.on {
+      right: 0;
+      left: unset;
+    }
+
+    .chat-content {
+      .message-input {
+        .emojis-main {
+          .contact-poll {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .meetzy-container {
+      .main-nav {
+        &.on {
+          ~ .meetzy-left-sidebar {
+            .dynamic-sidebar:not(.recent-default) {
+              &.active {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // footer
+    footer {
+      .section-py-space {
+        .footer-title {
+          .according-menu {
+            &:before {
+              left: 10px;
+              right: unset;
+            }
+          }
+        }
+      }
+    }
+
+    .error-main {
+      .error-contain {
+        .animated-bg {
+          i {
+            height: 70px;
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    //footer
+    .downlaod {
+      .footer-btn {
+        display: -webkit-box;
+
+        .btn + .btn {
+          margin-right: unset;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .app-sidebar {
+      &.active {
+        .apps-ul {
+          > li {
+            &.active {
+              left: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .chat-content {
+      .message-input {
+        .emojis-main {
+          .dot-btn {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    //footer
+    .downlaod {
+      .footer-btn {
+        display: -webkit-box;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    // blog page
+    .breadcrumb-main {
+      ul {
+        li + li {
+          margin-right: 15px;
+          margin-left: unset;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1640px) and (min-width: 1500px) {
+    .meetzy-main {
+      .messages {
+        .contact-details {
+          ul {
+            li {
+              padding-left: unset;
+              padding-right: 12px;
+
+              &:first-child {
+                padding-left: unset;
+                padding-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .meetzy-main {
+      .messages {
+        .contact-details {
+          padding: 20px 13px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1590px) and (min-width: 1500px) {
+    .contact-details {
+      .profile {
+        margin-right: 8px;
+        width: 52px;
+        height: 52px;
+      }
+
+      .icon-btn {
+        height: 42px !important;
+        width: 42px !important;
+      }
+
+      ul {
+        li {
+          padding-left: 4px !important;
+        }
+      }
+
+      .flex-grow-1 {
+        h5 {
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 840px) {
+    .contact-details {
+      .profile {
+        margin-left: 6px !important;
+        margin-right: unset;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .recent .template-title .mainnav {
+      margin: 0px;
+    }
+
+    .recent .template-title .mobile-back {
+      margin: 0 8px;
+    }
+
+    .dynamic-sidebar .chat-main .flex-grow-1 {
+      left: 0;
+      right: unset;
+    }
+
+    .meetzy-container {
+      .meetzy-main {
+        .messages {
+          .contact-details {
+            .col-7 {
+              .media-right {
+                li {
+                  padding-left: 10 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-details .profile {
+      margin-left: 15px !important;
+    }
+
+    .meetzy-container .main-nav.on ~ .meetzy-left-sidebar .dynamic-sidebar {
+      animation-name: fadeInRight;
+    }
+  }
+
+  @media (max-width: 930px) {
+    .contact-details {
+      .profile {
+        margin-left: 0px;
+      }
+    }
+  }
+}

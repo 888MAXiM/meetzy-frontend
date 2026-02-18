@@ -1,0 +1,51 @@
+@use 'utils/variables.scss';
+html {
+  &.style1 {
+    --primary-color: 60, 89, 161;
+    --primary-light: 233, 237, 246;
+    --gray1: 228, 231, 239;
+    --dark: 17, 23, 38;
+    --light: 36, 47, 74;
+    --light-dark: 25, 33, 54;
+  }
+  &.style2 {
+    --primary-color: 10, 152, 241;
+    --primary-light: 223, 241, 252;
+    --gray1: 225, 241, 238;
+    --dark: 3, 26, 40;
+    --light: 16, 42, 68;
+    --light-dark: 4, 39, 60;
+  }
+  &.style3 {
+    --primary-color: 1, 170, 133;
+    --primary-light: 227, 247, 243;
+    --gray1: 231, 245, 242;
+    --dark: 2, 13, 11;
+    --light: 4, 52, 41;
+    --light-dark: 4, 24, 21;
+  }
+  &.style4 {
+    --primary-color: 207, 100, 155;
+    --primary-light: 249, 235, 241;
+    --gray1: 231, 245, 242;
+    --dark: 18, 8, 13;
+    --light: 46, 21, 34;
+    --light-dark: 34, 17, 26;
+  }
+  &.style5 {
+    --primary-color: 86, 61, 124;
+    --primary-light: 237, 233, 244;
+    --gray1: 250, 235, 240;
+    --dark: 13, 9, 20;
+    --light: 39, 28, 57;
+    --light-dark: 19, 13, 29;
+  }
+  &.style6 {
+    --primary-color: 122, 62, 101;
+    --primary-light: 243, 234, 240;
+    --gray1: 250, 234, 224;
+    --dark: 29, 15, 24;
+    --light: 54, 28, 45;
+    --light-dark: 38, 20, 32;
+  }
+}
