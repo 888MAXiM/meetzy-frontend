@@ -802,7 +802,7 @@
       box-shadow: 0 0 20px #eee;
 
       body.dark & {
-        background-color: rgba(var(--light), 1) !important;
+        background-color: rgba(var(--dark), 1) !important;
         color: rgba(var(--white), 1) !important;
         box-shadow: none;
       }

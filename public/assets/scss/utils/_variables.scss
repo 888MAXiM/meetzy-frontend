@@ -1,5 +1,5 @@
 :root {
-  --primary-color: 37, 118, 123;
+  --primary-color: 1, 1, 1;
   --primary-light: 225, 243, 244;
   --success-color: 63, 204, 53;
   --danger-color: 226, 54, 37;
@@ -14,11 +14,14 @@
 }
 .dark {
   --dark-color: 230, 230, 230;
+  --light: 44, 42, 42;
+  --light-dark: 53, 53, 53;
+  --dark: 1, 1, 1;
 }
 //colors
 $black: #000000;
 $white: #ffffff;
-$primary-color: #25767B;
+$primary-color: #010101;
 $primary-light: #e1f3f4;
 $success-color: #3fcc35;
 $danger-color: #e23625;

@@ -178,7 +178,8 @@
               }
 
               &.active {
-                background-color: rgba(var(--primary-color), 1) !important;
+                background-color: rgba(var(--white), 1) !important;
+                color: rgba(var(--primary-color), 1) !important;
               }
             }
           }
@@ -280,7 +281,7 @@
     .main-nav {
       border-right: 1px solid rgba($white, 0.1);
       display: unset !important;
-      background-color: #021617;
+      background-color: rgba(var(--dark), 1);
 
       .logo-wrapper {
         border-bottom: 1px solid rgba($white, 0.1);
@@ -293,6 +294,7 @@
           .chat-friend-toggle {
             .icon-btn {
               background-color: rgba(var(--light), 1);
+              fill: rgba(var(--white), 1);
             }
           }
         }
@@ -329,7 +331,7 @@
 
       .messages {
         color: $white;
-        background-color: rgba(var(--dark), 1);
+        background-color: rgba(var(--light-dark), 1);
 
         .contact-details {
           color: $white;
@@ -917,7 +919,7 @@
   }
 
   .form-control {
-    background-color: rgba(var(--light), 1);
+    background-color: rgba(var(--light-dark), 1);
     color: rgba($white, 0.8);
     border-color: rgba($white, 0.2);
 

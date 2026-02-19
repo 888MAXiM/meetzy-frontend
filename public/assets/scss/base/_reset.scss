@@ -3470,6 +3470,9 @@ header .landing-header .navbar-collapse .navbar-nav .nav-item.active .nav-link {
 
 .chatavtar-div {
   background-color: rgba(var(--primary-color), 1);
+  body.dark & {
+    background-color: rgb(var(--light-dark), 1);
+  }
 }
 
 .stickerimg-img {
@@ -4947,7 +4950,7 @@ header .landing-header .navbar-collapse .navbar-nav .nav-item.active .nav-link {
 }
 
 body.dark .custom-switch input:checked+.slider {
-  background-color: rgba(var(--primary-color), 1) !important;
+  background-color: rgba(var(--light-dark), 1) !important;
 }
 
 .custom-switch input:checked+.slider:before {

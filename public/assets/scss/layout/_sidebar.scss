@@ -412,6 +412,9 @@
                 cursor: pointer;
                 padding: 4px;
                 justify-content: space-between;
+                body.dark & {
+                  background-color: rgba(var(--light-dark), 1);
+                }
                 img {
                   border-radius: 100%;
                   height: 35px;
@@ -423,6 +426,9 @@
                 .profile{
                   height: 35px;
                   width: 35px;
+                  body.dark & {
+                    background-color: rgba(var(--dark), 1);
+                  }
                 }
 
                 h6 {
