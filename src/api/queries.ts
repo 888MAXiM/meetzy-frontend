@@ -544,9 +544,9 @@ const queries = {
         return {
           messages: filteredMessages,
           nextPage: currentPage + 1,
-          hasMore: pagination.hasMore || false,
+          hasMore: pagination?.hasMore || false,
           isFirstPage: pageParam === 0,
-          total: pagination.totalPages || 0,
+          total: pagination?.totalPages || 0,
         }
       },
       initialPageParam: 1,
