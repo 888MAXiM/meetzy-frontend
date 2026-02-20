@@ -8,6 +8,7 @@ import type {
   GetContactsResponse,
   GetGroupsResponse,
   GroupResponse,
+  PaginationData,
   ResponseSearchMessage,
   SearchParams,
 } from '../types/components/chat'
@@ -468,7 +469,7 @@ const queries = {
           page: pageParam,
         })
 
-        const pagination = response?.pagination || {}
+        const pagination: PaginationData = response?.pagination || {}
         const currentPage = pagination?.currentPage || (pageParam as number)
 
         // Decrypt and filter messages client-side
