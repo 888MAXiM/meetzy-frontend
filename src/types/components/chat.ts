@@ -572,11 +572,11 @@ export interface ResponseSearchMessage {
 }
 
 export interface PaginationData {
-  currentPage: number
+  currentPage?: number
   limit: number
-  totalMessages: number
-  totalPages: number
-  hasMore: boolean
+  totalMessages?: number
+  totalPages?: number
+  hasMore?: boolean
 }
 
 interface ScrollMessage {
