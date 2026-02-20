@@ -573,7 +573,7 @@ export interface ResponseSearchMessage {
 
 export interface PaginationData {
   currentPage?: number
-  limit: number
+  limit?: number
   totalMessages?: number
   totalPages?: number
   hasMore?: boolean
