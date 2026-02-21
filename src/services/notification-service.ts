@@ -8,7 +8,7 @@ import {
 
 const SOUND_STORAGE_KEY = 'notificationSoundEnabled'
 const BROWSER_NOTIFICATION_STORAGE_KEY = 'browserNotificationsEnabled'
-const DEFAULT_NOTIFICATION_ICON = `${ImagePath}/logos/2.svg`
+const DEFAULT_NOTIFICATION_ICON = `${ImagePath}/logos/favicon.png`
 const INCOMING_CALL_RINGTONE_PATH = '/assets/audio/outgoing-call.mp3'
 const OUTGOING_CALL_RINGTONE_PATH = '/assets/audio/outgoing-call.mp3'
 

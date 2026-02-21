@@ -23,7 +23,7 @@ const AuthHeader = ({ isSignupPage, homeRoute, back }: AuthHeaderProps) => {
         <Link to={homeRoute}>
           <Image
             className="img-fluid for-light m-auto"
-            src={`${logo_light_url ? ImageBaseUrl + logo_light_url : `${ImagePath}/logos/1.svg`}`}
+            src={`${logo_light_url ? ImageBaseUrl + logo_light_url : `${ImagePath}/logos/logo.jpg`}`}
             alt="logo"
           />
           <Image

@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
-import { SvgIcon } from '../shared/icons'
 import useInternetConnection from '../utils/useInternetConnection'
 import NoInternetPage from './NoInternetPage'
+import { SvgIcon } from '../shared/icons'
+import { ImagePath } from '../constants'
 
 interface InternetConnectionWrapperProps {
   children: ReactNode
@@ -15,8 +16,9 @@ const InternetConnectionWrapper = ({ children }: InternetConnectionWrapperProps)
       <div className="internet-connection-loading flex-center ">
         <div className="text-center">
           <div className="main-loader">
-            <SvgIcon className="light-logo" iconId="logo-light" />
-            <SvgIcon className="dark-logo" iconId="logo-dark" />
+          {/* <SvgIcon className="light-logo" iconId="logo-light" /> */}
+          <img className="light-logo" src={`${ImagePath}/logos/logo.jpg`} width={300} alt="footer-back-img" />
+          {/* <SvgIcon className="dark-logo" iconId="logo-dark" /> */}
             <p>Simple, secure messaging for fast moving teams...!</p>
           </div>
         </div>

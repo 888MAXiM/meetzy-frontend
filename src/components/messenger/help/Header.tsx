@@ -43,7 +43,7 @@ const Header = ({ activeTab, setActiveTab, setOpen, tabArray }: HelpHeaderProps)
           <Container className="custom-container">
             <div className="main-menu">
               <NavbarBrand className="d-flex">
-                <Image src="/logo/logo-2.svg" alt="ChatLogo" height={35} />
+                <Image src="/logos/favicon.png" alt="ChatLogo" height={35} />
                 <p>Help Center</p>
               </NavbarBrand>
               <div>

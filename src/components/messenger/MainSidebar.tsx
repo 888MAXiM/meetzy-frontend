@@ -66,7 +66,7 @@ const MainSidebar = () => {
           <Link to={ROUTES.Messenger}>
             <Image
               className="img-fluid inner2"
-              src={`${sidebar_logo_url ? ImageBaseUrl + sidebar_logo_url : `${ImagePath}/logo/logo-2.svg`}`}
+              src={`${sidebar_logo_url ? ImageBaseUrl + sidebar_logo_url : `${ImagePath}/logo/favicon.png`}`}
               alt="footer-back-img"
             />
           </Link>
