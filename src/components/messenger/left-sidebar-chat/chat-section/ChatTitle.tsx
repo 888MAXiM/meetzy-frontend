@@ -1,14 +1,13 @@
 import { Fragment, useEffect, useState } from 'react'
 import { Plus, Search, X } from 'react-feather'
+import { useTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { Input } from 'reactstrap'
 import { useAppSelector } from '../../../../redux/hooks'
 import { setGlobalSearchTerm } from '../../../../redux/reducers/messenger/messengerSlice'
+import Config from '../../../../utils/config'
 import { useDebounce } from '../../../../utils/useDebounce'
 import ChatContactSetting from './quick-actions'
-import { useTranslation } from 'react-i18next'
-import { SvgIcon } from '../../../../shared/icons'
-import Config from '../../../../utils/config'
 
 const ChatTitle = () => {
   const dispatch = useDispatch()

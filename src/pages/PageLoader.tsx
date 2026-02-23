@@ -1,8 +1,7 @@
 import { ReactNode } from 'react'
+import { ImagePath } from '../constants'
 import useInternetConnection from '../utils/useInternetConnection'
 import NoInternetPage from './NoInternetPage'
-import { SvgIcon } from '../shared/icons'
-import { ImagePath } from '../constants'
 
 interface InternetConnectionWrapperProps {
   children: ReactNode
