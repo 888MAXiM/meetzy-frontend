@@ -7,6 +7,8 @@ import { setGlobalSearchTerm } from '../../../../redux/reducers/messenger/messen
 import { useDebounce } from '../../../../utils/useDebounce'
 import ChatContactSetting from './quick-actions'
 import { useTranslation } from 'react-i18next'
+import { SvgIcon } from '../../../../shared/icons'
+import Config from '../../../../utils/config'
 
 const ChatTitle = () => {
   const dispatch = useDispatch()
@@ -16,6 +18,7 @@ const ChatTitle = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const debouncedSearch = useDebounce(searchTerm, 500)
   const { subChatActiveTab, messengerActiveTab } = useAppSelector((state) => state.messenger)
+  const mode = Config.sidebar_layout
   const toggleChatContact = () => setChatContact(!chatContact)
 
   useEffect(() => {
@@ -56,7 +59,7 @@ const ChatTitle = () => {
                 </div>
               </div>
               <button className="icon-btn btn-primary btn-fix chat-cont-toggle outside" onClick={toggleChatContact}>
-                <Plus />
+                <Plus className={mode !== "dark" ? "dark" : "light"}/>
                 <ChatContactSetting setChatContact={toggleChatContact} chatContact={chatContact} />
               </button>
             </div>

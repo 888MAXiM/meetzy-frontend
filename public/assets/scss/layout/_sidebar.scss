@@ -567,6 +567,15 @@
               svg {
                 height: 14px;
                 width: 14px;
+                body.dark & {
+                  stroke: rgba(var(--white), 1) !important;
+                  &.fill-primary{
+                    fill: rgba(var(--white), 1) !important;
+                  }
+                  &.light{
+                    stroke: rgba(var(--primary-color), 1) !important;
+                  }
+                }
               }
             }
           }

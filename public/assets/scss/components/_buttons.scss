@@ -19,6 +19,11 @@
   color: rgba($white, 1);
   transition: all 0.3s ease;
 
+  body.dark & {
+    background-color: rgba($white, 1) !important;
+    color: rgba(var(--primary-color), 1);
+  }
+
   &.disabled,
   &:disabled {
     background-color: rgba(var(--primary-color), 1) !important;
@@ -34,6 +39,10 @@
     transition: all 0.3s ease;
     outline: none !important;
     color: $white !important;
+    body.dark & {
+      background-color: rgba($white, 1) !important;
+      color: rgba(var(--primary-color), 1) !important;
+    }
   }
 
   &:focus {

@@ -1016,7 +1016,7 @@ const Chat = () => {
     setMessageToDelete(null)
   }
 
-  const handleMobileMenu = () => {
+  const   handleMobileMenu = () => {
     dispatch(setMobileMenu())
   }
 

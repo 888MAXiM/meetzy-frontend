@@ -3496,7 +3496,7 @@ header .landing-header .navbar-collapse .navbar-nav .nav-item.active .nav-link {
   width: 45px !important;
 
   body.dark & {
-    background-color: rgba(var(--dark), 1);
+    background-color: rgba(var(--white), 0.1);
   }
 
   img {
@@ -5074,7 +5074,7 @@ body.dark .custom-switch input:checked+.slider {
 }
 
 .system-message {
-  color: #646464;
+  color: #ffffff;
 }
 
 .css-t3ipsp-control {
@@ -6078,6 +6078,9 @@ button {
   stroke: none !important;
   height: 17px !important;
   width: 17px !important;
+  body.dark & {
+    fill: rgba(var(--white), 1) !important;
+  }
 }
 
 .read-message-title,
