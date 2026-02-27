@@ -331,7 +331,7 @@ export class NotificationServiceClass {
       this.originalFavicon = this.getCurrentFavicon()
     }
 
-    document.title = this.originalTitle || 'Meetzy-Front'
+    document.title = this.originalTitle || 'втренде-Front'
 
     if (this.originalFavicon) {
       this.setFavicon(this.originalFavicon)
