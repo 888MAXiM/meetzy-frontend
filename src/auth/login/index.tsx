@@ -310,14 +310,6 @@ const LoginForm = () => {
     handleVerifyOtp()
   }
 
-  const handleSetFieldValue = (field: string, value: any) => {
-    if (field === 'identifier') {
-      dispatch(setIdentifier(value))
-    } else if (field === 'password') {
-      setPassword(value)
-    }
-  }
-
   // Handler to update refs from Formik
   const handleFormikValuesChange = (values: { phone: string; country_code: string }) => {
     formikPhoneRef.current = values.phone
