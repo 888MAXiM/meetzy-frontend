@@ -14,7 +14,6 @@ import PhoneInput from '../../shared/form-fields/PhoneInput'
 import TextInput from '../../shared/form-fields/TextInput'
 import { SvgIcon } from '../../shared/icons'
 import { LoginResponse, OTPInitResponse } from '../../types/auth'
-import LoginTable from './Login'
 
 type IdentifierType = 'email' | 'phone' | null
 type LoginMode = 'password' | 'otp' | 'otp-verify'
@@ -591,9 +590,6 @@ const LoginForm = () => {
             </p>
           )}
         </div>
-        {isDemoMode && activeTab === 'email' && mode !== 'otp-verify' && (
-          <LoginTable setFieldValue={handleSetFieldValue} />
-        )}
       </div>
     </div>
   )
